@@ -276,7 +276,7 @@ We place significant value on professionalism, improvement over the quarter, and
 - Turn off the peer review.
 - Remove all students and TAs from GitHub and Slack (as appropriate).
 - Update the web page to add the one-pagers and other information for the projects history
-- Update the Clinic Census and Statistic doc [link here](https://docs.google.com/spreadsheets/d/1cjh8Nii2IoAxG8nynYUlc9nOkVl3kGgWw2pihY98J6Q/edit?gid=279684155#gid=279684155)
+- Update the [Clinic Census and Statistic doc](https://docs.google.com/spreadsheets/d/1cjh8Nii2IoAxG8nynYUlc9nOkVl3kGgWw2pihY98J6Q/edit?gid=279684155#gid=279684155) as well as [Composite Roster](https://docs.google.com/spreadsheets/d/1QGHqvw40Mru5O4KzxK8PRlWdrPB6W4HgMRWcX3DQ5Z4/edit?pli=1&gid=0#gid=0)
 - Go through the last quarter and review the above instructions. What is missing? What needs to be added? Create a to do list of items.
 - Are there any templates that you want to add (email/slack)
 - Remember, this is fun, lol.
