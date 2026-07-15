@@ -9,7 +9,6 @@ The application process starts a few weeks before the quarter begins and initial
 
 **If you have any questions about the application process please see the [FAQ page](../faq/) before contacting us.** 
 
-{% include application.html %}
 
 ## FAQ
 For frequently asked questions, please see our [FAQ page](../faq/). 
