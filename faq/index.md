@@ -108,4 +108,4 @@ From the clinic's perspective this is not a significant issue. Please inform the
 ## Contact Information {#contact-information}
 
 ### Who can I contact about the Data Science Clinic? {#contact}
-Inquiries can be sent to Nick Ross, Director of the Data Science Clinic. 
+Inquiries can be sent to David Uminsky and Kelly O'Brien (ktobrien@uchicago.edu), who direct the Data Science Clinic. 

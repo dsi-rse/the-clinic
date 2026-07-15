@@ -34,3 +34,25 @@ h6:hover .anchor-link {
   outline: 2px solid #0366d6;
   outline-offset: 2px;
 }
+
+/* Chatbot iframe fix
+   The theme's sidebar (header) is position:fixed with no height cap and no
+   scroll. The chat iframe is a fixed 600px, so on shorter viewports (notably
+   Safari, whose toolbar shortens the visible area) the bottom of the iframe —
+   the chat input — falls below the fold and can't be reached. Cap the iframe
+   to the viewport and let the fixed sidebar scroll internally. */
+.sidebar-images iframe {
+  width: 100%;
+  height: 70vh;
+  min-height: 400px;
+  max-height: 600px;
+  border: 1px solid #e5e5e5;
+}
+
+@media screen and (min-width: 961px) {
+  header {
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
