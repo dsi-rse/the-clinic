@@ -46,7 +46,7 @@ We expect all TA sessions and mentor meetings (unless the mentor chooses otherwi
 
 ## People
 
-The Data Science Clinic is administered by [David Uminsky](https://datascience.uchicago.edu/people/david-uminsky/) and [Kelly O'Brien](ktobrien@uchicago.edu). Questions about the clinic should be addressed to them either over slack or via their UChicago email address.  
+The Data Science Clinic is administered by [David Uminsky](https://datascience.uchicago.edu/people/david-uminsky/) and Kelly O'Brien (ktobrien@uchicago.edu). Questions about the clinic should be addressed to them either over slack or via their UChicago email address.  
 
 
 ## Documents 
