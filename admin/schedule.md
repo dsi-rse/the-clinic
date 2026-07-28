@@ -73,7 +73,7 @@ Applications close on Friday of this week. After the deadline:
     - We only use a single canvas page (the one for Data 27100), make sure that all students are in that canvas page.
 - Add Org Report and Computer Set up Assignment to Canvas with correct dates and times.
 The following tasks depend upon having a list of confirmed students and projects:
-- Create Slack channels. Add students, mentors, and TAs.
+- Create Slack channels. Add students, mentors, and TAs to private channels and invite users as single channel guests. We pay a membership fee per head for regular users and that is not necessary for these students
 - Create GitHub repositories. Add students, mentors, and TAs
 - Send the DSI cluster admin a list of CNET user IDs and associated projects to grant them access to the cluster.
 - Slack message for Mentors & TAs:
