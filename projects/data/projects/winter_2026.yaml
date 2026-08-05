@@ -31,7 +31,7 @@ projects:
   ta: César Nuñez Huaman
   github_link: https://github.com/dsi-clinic/2025-autumn-apollocare
   is_private_repo: true
-  has_one_pager: false
+  has_one_pager: true
   external_mentor_info: Austin Nafziger
   project_url_valid: false
   is_11th_hour: false
