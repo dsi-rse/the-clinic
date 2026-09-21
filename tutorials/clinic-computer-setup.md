@@ -72,7 +72,11 @@ If not present on WSL/Ubuntu systems you will need to install the `build-essenti
 
     sudo apt-get install build-essential
 
-On Mac systems, make will also generally be installed, but if it is not then type 
+On Mac systems, make will also generally be installed, but if it is not then type
+
+    xcode-select --install
+
+to start an installation of XCode Command Line Tools.
 
 **Verification:** Open your terminal and type in the following command. If it returns without an error than make is installed:
 
