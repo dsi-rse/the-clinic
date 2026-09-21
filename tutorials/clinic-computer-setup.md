@@ -88,7 +88,35 @@ We will use SSH keys to authenticate to github and (if applicable) the DSI Clust
 
 If this returns your username and something to the effect of `You've Successfully Authenticated` then it has worked. 
 
-## 7. DSI Cluster
+## 7. Claude Code
+
+The University is providing access to Claude Enterprise accounts. Please [see these instructions for activating your account](https://intranet.uchicago.edu/tools-and-resources/tools-and-applications/claude/getting-started-with-claude) if you need. Then install Claude Code [using these instructions](https://claude.com/product/claude-code) either as a desktop application or as CLI.
+
+**Verification:** Start a Claude Code session either in the desktop app or in a terminal. 
+
+## 8. Box
+
+We use Box for large file storage on many projects. Data that is too large to commit lives in a shared Box folder, and your project reads it through a `DATA_DIR` path set in the project's `.env` file rather than keeping the data in the repository. You can use your CNET to access your [university account here](https://uchicago.account.box.com/login).
+
+You need **Box Drive**, not just the website, so that your code -- and the Docker container it runs in -- can open Box files like ordinary files. Download it [here](https://www.box.com/resources/downloads) and sign in with your CNET.
+
+On Mac, Box Drive syncs to `~/Library/CloudStorage/Box-Box/` and requires no further setup.
+
+On Windows, Box Drive is a Windows application and the folder it creates cannot be read from WSL without additional configuration. Please see [these instructions](./box-wsl.md).
+
+**Verification:** Open your terminal and confirm you can list your Box folder, read a file out of it, and mount it in Docker. On Mac:
+
+    ls ~/Library/CloudStorage/Box-Box/
+    head -c 20 ~/Library/CloudStorage/Box-Box/"Get Started with Box.pdf"
+    docker run --rm -v ~/Library/CloudStorage/Box-Box:/data alpine ls /data
+
+On Windows, run the same three commands against `/mnt/Box` instead. Reading a file matters because Box only downloads files on demand, so a successful `ls` does not prove the file itself is available.
+
+Finally, create a file from the terminal and confirm that it appears in the Box web app:
+
+    echo "hello" > YOUR_BOX_PATH/test.txt
+
+## 9. DSI Cluster
 
 If you need to access the cluster then you will need to request an account (which should have already been done for you). You will then need to set up SSH keys and verify that you can SSH into the machine. Note that the step-by-step instructions for how to do this are included in the [same SSH Keys docs as in section 6](./ssh_github_cluster.md). 
 
@@ -114,7 +142,7 @@ If the above command works then you should see something like `CNET@g007:~$` as 
 
 _Make sure to type in `exit` when you are done!_
 
-## 8. GitHub Repository Cloned
+## 10. GitHub Repository Cloned
 
 You should have your GitHub repository cloned to the correct location(s).
 

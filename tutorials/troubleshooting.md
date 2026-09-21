@@ -15,6 +15,7 @@ This document has sections for different tools used in the DSI clinic. Each one 
     - [Tips and Guides](#guides-and-tips)
     - [Troubleshooting](#troubleshooting-cluster)
 - [WSL](#wsl)
+    - [Common Errors](#common-errors-1)
     - [Tips and Guides](#guides-and-tips-1)
     - [Troubleshooting](#troubleshooting-wsl)
 
@@ -111,6 +112,13 @@ Test: request compute node and `ssh COMPUTE_NODE.ds` where `COMPUTE_NODE` is the
 
 
 ## WSL
+
+### Common Errors
+
+#### Error: `ls: cannot access '/mnt/c/Users/YOUR_WINDOWS_USERNAME/Box': Input/output error`
+Symptom: You can see your `Box` folder in File Explorer, but listing it from WSL fails. Docker fails the same way, with `docker: Error response from daemon: stating /mnt/c/Users/YOUR_WINDOWS_USERNAME/Box: input/output error`.
+<br>Cause: Box Drive creates `Box` as a Windows reparse point rather than a normal folder, and WSL cannot follow it through the `/mnt/c` mount. A `DATA_DIR` pointed anywhere under `/mnt/c/.../Box` will never work.
+<br>Solution: Mount the Box folder directly at its own mount point, as described in the [Box on Windows (WSL) doc](./box-wsl.md).
 
 ### Guides and Tips
 

@@ -114,6 +114,7 @@ We keep a list of frequently asked questions and answers as well as "How-to"'s f
 * [Using Podman on the Cluster](../tutorials/podman.md)
 * [Speaking Code](../tutorials/speaking-code.md)
 * [WSL FAQ](../tutorials/WSL.md)
+* [Box on Windows (WSL)](../tutorials/box-wsl.md)
 * [Web scraping](../tutorials/web_scraping.md)
 * [X11 on the Cluster](../tutorials/X11.md)
 * [How to talk about the clinic on your resume and in interviews](../tutorials/resume-interviews.md)
