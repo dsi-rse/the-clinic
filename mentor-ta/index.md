@@ -9,8 +9,10 @@
 
 - [General Information](#general-information)
 - [Expectations](#expectations)
+- [The Weekly Cycle](#the-weekly-cycle)
 - [Weekly Calendar](#weekly-calendar)
 - [How to](#how-to)
+- [Escalation](#escalation)
 - [Rubrics](#rubrics)
 - [FAQ](#faq)
   * [Can the students present their research at a conference?](#can-the-students-present-their-research-at-a-conference)
@@ -24,6 +26,18 @@
 The following documents outline the core responsibilities of each position.
 * [General Mentor Expectations](./mentor-expectations.md)
 * [TA Expectations](./ta-expectations.md)
+* [Student Responsibilities](../students/index.md#your-weekly-responsibilities)
+
+## The Weekly Cycle
+
+Student work lives in GitHub. Each week:
+
+* Students open issues for their tasks with clear acceptance criteria, push code to pull requests, and post their progress as comments on those issues.
+* **TAs** run `/clinic-pr-review` on open pull requests, make sure students are pushing and opening issues, unblock technical problems, and post a weekly update per project to the thread in the clinic TAs Slack channel.
+* **Mentors** run `/clinic-project-review` before each meeting, run the meeting, and assign next week's tasks with clear acceptance criteria.
+* **Clinic administration** runs `/clinic-review` across all projects to catch students with no commits, students with no issues, issues without clear acceptance criteria, and projects that look like they are stalling.
+
+The formats and grading are in the [weekly tasks template](../templates/weekly-tasks.md), the [weekly report template](../templates/weekly-report.md), and the [weekly report and work product rubric](../rubrics/weekly-report-rubric.md).
 
 ## Weekly Calendar
 [Weekly Calendar](../syllabus/weekly-plan.md)
@@ -34,9 +48,11 @@ The following documents outline the core responsibilities of each position.
 * [TA Training Repository](https://github.com/dsi-clinic/ta-training) - Comprehensive training materials and technical standards
 * [TA Training Presentation](https://dsi-clinic.github.io/ta-training/) - Interactive training slides
 
+## Escalation
+* [Escalation and Common Failure Modes](./escalation.md) - who to reach out to, what to do when a project stalls, and the usual ways things fall apart
+
 ## Rubrics
-  * [Progress Report](../rubrics/progress-doc-rubric.md)
-  * [Planning Report](../rubrics/planning-doc-rubric.md)
+  * [Weekly Report and Work Product](../rubrics/weekly-report-rubric.md)
   * [Peer Review](../rubrics/peer-review.md)
   * [Final Email](../rubrics/final-email.md)
   * [Mid-quarter presentation](../rubrics/mid-quarter-presentation-rubric.md) 

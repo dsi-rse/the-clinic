@@ -8,6 +8,8 @@ title: "Computer Setup for Data Science Clinic"
 
 This document contains information on how to prepare you computer for the data science clinic. Note that if you do not have these set up properly your grade may be penalized.
 
+**This is the required technical onboarding for the first week of the quarter.** Work through it during week one and escalate anything that does not work to your TA — do not let a broken setup carry into week two. You cannot push code if your environment does not work, and a week with no pushed code is a 0.
+
 Importantly there may be alternatives to the software listed below that has similar functionality. In the case of you using an alternative you will not receive support from the clinic staff/TAs/etc. We _strongly_ recommend you use the options below.
 
 ## 1. Unix Command Line Terminal
@@ -121,4 +123,18 @@ You should have your GitHub repository cloned to the correct location(s).
 **Verification:** Open your GitHub repository in VS Code. 
 - If your project uses a devcontainer for Docker, it should be in the devcontainer extension. 
 - If you use Windows, your project should be located in the WSL filesystem.
-- If you are using the cluster, your repository should be cloned on the cluster. 
+- If you are using the cluster, your repository should be cloned on the cluster.
+
+## 9. Box
+
+Some projects store data or partner documents in [UChicago Box](https://uchicago.app.box.com/). Log in with your CNetID and confirm you can reach any Box folder your project uses. Your mentor or TA will tell you whether your project uses Box and which folder.
+
+Note that data from Box does not belong in the git repository. Follow the [large file storage](./large_file_storage.md) guidance instead.
+
+**Verification:** Log into Box with your CNetID in a browser and open your project's folder.
+
+## 10. Git and GitHub Workflow
+
+Clinic work is submitted as pull requests, so you need to be comfortable with the basic branch-commit-push-PR loop before week two.
+
+**Verification:** In your project repository, check out a new branch, make a trivial commit, push the branch, and open a pull request. If any step of that is unfamiliar, work through [this Git branching tutorial](https://learngitbranching.js.org/?locale=en_US) and ask your TA. 

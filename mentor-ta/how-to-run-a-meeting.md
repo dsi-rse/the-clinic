@@ -1,21 +1,23 @@
 # How to Run an Update Meeting
 
-This document provides a template for conducting an update meeting with your student group. While you are encouraged to use your own judgment and tools, this guide outlines some effective practices. 
+This document provides a template for conducting an update meeting with your student group. While you are encouraged to use your own judgment and tools, this guide outlines some effective practices.
 
-There are two documents that need to be figured out during this meeting: the evaluation of the previous week ("Progress Report") and what students are expected to do the next week ("Planning Document"). You should leverage these documents to organize and frame your meetings.
+The meeting has two jobs: evaluate last week's work, and assign next week's tasks. Both are anchored in GitHub — last week's tasks are issues with student progress comments on them, and next week's tasks will be new issues the students open by midnight tonight.
 
 ## Goals of the Meeting
 
 The weekly meeting aims to:
 
 1. Have each student report on the work completed in the past week.
-2. Assign a specific task to each student for the coming week.
+2. Assign a specific task to each student for the coming week, with clear acceptance criteria.
 3. Address any outstanding issues, blockers, or problems.
 
 ## Before the Meeting
 
-- **Review Reports**: Examine the latest Planning and Progress documents on Canvas. This will help you understand what the students were expected to accomplish in the past week versus what they actually did.
+- **Run `/clinic-project-review`** on the project repository. It reports actual progress against last week's tasks, who hasn't pushed, what isn't merged to `main` yet, whether the TA has reviewed the open code, and a menu of candidate tasks for next week.
+- **Read the students' weekly reports** — the comments they posted on last week's issues — and skim the open pull requests. This tells you what they were expected to accomplish versus what they actually did.
 - **Project Direction**: Take a moment to consider the project's direction. Think about the next steps you would take if you were directly involved in the project work.
+- **Decide before you walk in** roughly what each student should be doing next week. Don't design the week live in the meeting.
 
 ## Example Meeting Agenda
 
@@ -23,26 +25,35 @@ Establishing a consistent process for the meetings is crucial. The most successf
 
 1. **Preparation**:
    - Share your screen for transparency.
-   - Have the GitHub repository, weekly reports, and a text editor for notes ready.
-   - **Open the Progress Report from last week**
+   - Have the GitHub repository, the issue list, and a text editor for notes ready.
+   - **Open last week's issues and the `/clinic-project-review` output.**
 2. **Goal Reminder**:
    - Remind students of the high level goal of the project. Even repeating the same two-ish sentences per week is useful.
-2. **Student Updates** (10-15 minutes):
-   - Ask each student to provide a concise update on their assigned task (<2 minutes per student)
-   - Encourage brevity and focus; avoid lengthy discussions during updates.
-   - Ensure work products are submitted, preferably in a pull request.
+3. **Student Updates** (10-15 minutes):
+   - Ask each student to provide a concise update on their assigned task (<2 minutes per student). Slides are recommended and students should share their screens.
+   - **Use a timer if necessary.** Do not let one long update dominate the meeting.
+   - **Do not debug code in the meeting.** Send it to the TA session.
+   - Ensure work products are submitted, in a pull request.
    - Table any issues for later discussion.
    - Be comfortable cutting students off to make sure that everyone gives their update.
-3. **Discussion** (30 minutes): Talk through any broader issues, concerns, project direction , etc.
-4. **Task Assignment** (10-15 minutes): Assign tasks to individual students to ensure clear responsibility and progress. Avoid assigning the same task to multiple students.
+4. **Discussion** (30 minutes): Talk through any broader issues, concerns, project direction, etc.
+5. **Task Assignment** (10-15 minutes): Assign tasks to individual students to ensure clear responsibility and progress. Avoid assigning the same task to multiple students.
+   - Every task needs **clear acceptance criteria**.
+   - Every task must produce something that can be **published on GitHub within a week of work.** If you assign a paper to read, part of the task is answering a specific set of questions and posting the findings as a comment on the issue.
+   - Confirm each student can restate their own task back to you.
 
 ### Before the Meeting Ends
 
-1. Confirm that students are clear about their tasks for the next week.
+1. Confirm that students are clear about their tasks for the next week, and remind them that the issues are due by midnight tonight with links posted to the Slack thread.
 2. Finalize any meetings with external clients, ensuring they are scheduled properly with necessary Zoom links.
+
+### If Nothing Got Merged
+
+If a student's work didn't land, decide on the spot which case you're in — larger than expected, poorly scoped, nearly done, or no effort — and say so out loud. The four cases and what to do about each are in [Mentor Expectations](./mentor-expectations.md#carrying-tasks-over). Repeating "actually finish it" week after week without changing the scope is the single most common way a project stalls; see [escalation and common failure modes](./escalation.md).
 
 ## Lessons Learned
 
 - **Note-Taking**: Students often forget their assignments post-meeting. Taking notes and sharing them in the Slack channel can be very helpful for both you and the students. I have gotten in the habit of just taking notes myself and sharing them rather than relying on students to do it. Even after cajoling, students fail to prioritize note-taking.
 - **Task Assignment**: Assign tasks to _only one student_. If a task is large, break it into smaller, distinct parts.
 - **Logistical Follow-ups**: Address logistical matters during the meeting. Be cautious about relying on students who say, "I'll get back to you." They almost never do.
+- **Acceptance criteria are hard to write.** They are also the highest-leverage thing you do in the meeting. Keep at it, and bring examples you're unsure about to the mentor meetings.

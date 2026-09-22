@@ -7,15 +7,18 @@
 
 - [Syllabus](#syllabus)
 - [Weekly Calendar](#weekly-calendar)
+- [Your Weekly Responsibilities](#your-weekly-responsibilities)
 - [Logistics](#logistics)
   * [Meeting times / Simultaneous Enrollment](#meeting-times--simultaneous-enrollment)
   * [In-person requirements](#in-person-requirements)
 - [People](#people)
 - [Documents](#documents)
-  * [Progress and Planning Docs](#progress-and-planning-docs)
+  * [Weekly Tasks and Weekly Report](#weekly-tasks-and-weekly-report)
   * [First Week Org Report](#first-week-org-report)
   * [Meeting with External Mentors](#meeting-with-external-mentors)
   * [Mid-quarter presentation](#mid-quarter-presentation)
+  * [Peer Review](#peer-review)
+- [Technical Work Requirements](#technical-work-requirements)
 - [Finals Week Deliverables](#finals-week-deliverables)
 - [Coding Standards](#coding-standards)
 - [Additional Tutorials and Assistance](#additional-tutorials-and-assistance)
@@ -27,6 +30,36 @@ The Syllabus, including all course expectations can be found [here](../syllabus/
 
 ## Weekly Calendar
 You can find a weekly calendar [here](../syllabus/weekly-plan.md). 
+
+## Your Weekly Responsibilities
+
+Almost everything you owe the clinic each week happens in **GitHub** and your project's **Slack channel**. The cycle runs from one mentor session to the next.
+
+**During the first week**, complete the required [technical onboarding](../tutorials/clinic-computer-setup.md) and escalate any problems to your TA. Do not let a broken setup carry into week two.
+
+**After each mentor session** (by midnight that day):
+
+* Open a GitHub issue, or issues, describing your tasks for the coming week with clear acceptance criteria.
+* Post links to those issue(s) in the weekly Slack thread.
+
+**Throughout the week:**
+
+* Attend both TA sessions and make steady progress toward completing your tasks.
+* Respond to the code reviews your TA leaves on your pull requests.
+
+**By midnight before your mentor session:**
+
+* Submit your work on GitHub. If the task involved code, it must be committed and pushed in a pull request. If it did not, your findings go in a comment on the issue.
+* Describe your progress on last week's issues as a comment on each issue, linking any related pull request.
+* Post links to those issue comments in the weekly Slack thread.
+* Prepare a short update on last week's work.
+
+**At the mentor session:**
+
+* Present your update to the team. Slides are recommended and you should expect to share your screen. Keep it short — your mentor may use a timer.
+* Make sure you understand your assignment for the coming week. If you do not, ask.
+
+Formats and grading for all of this are covered in [Weekly Tasks and Weekly Report](#weekly-tasks-and-weekly-report) below.
 
 ## Logistics
 ### Meeting times / Simultaneous Enrollment
@@ -54,15 +87,20 @@ The Data Science Clinic is administered by [David Uminsky](https://datascience.u
 This section contains links to many of the important documents used in the Data Science Clinic. 
 
 
-### Progress and Planning Docs
+### Weekly Tasks and Weekly Report
 
-Each week you are required to upload a planning and progress doc (due dates are specific to your project and can be found on Canvas). 
+Your weekly deliverables live in GitHub. There is no document to upload.
 
-The planning doc can be found [here](../templates/planning-doc.md) in markdown format. There is a rubric [here](../rubrics/planning-doc-rubric.md).
+**Weekly tasks** are GitHub issues that you open after each mentor session, with clear acceptance criteria for each task. The format and the rules for carrying unfinished tasks over are in the [weekly tasks template](../templates/weekly-tasks.md).
 
-The progress doc can be found [here](../templates/progress-doc.md) in markdown format. There is a rubric [here](../rubrics/progress-doc-rubric.md).
+**The weekly report** is a comment you post on those same issues before your next mentor session, marking each piece of acceptance criteria as `complete`, `pending review`, `pending changes`, `in progress`, or `no progress shared`, with a short explanation. The format is in the [weekly report template](../templates/weekly-report.md).
 
-Note that in the `templates` directory you can also find MS-word versions of the two documents.
+Both are graded together as a single 0-5 score each week by your mentor. The rubric is [here](../rubrics/weekly-report-rubric.md).
+
+Two things worth repeating:
+
+* **A task is not complete until the pull request addressing it is merged to `main`.**
+* **If a task required code and you pushed none, you receive a 0 for that week.**
 
 ### First Week Org Report
 
@@ -83,6 +121,19 @@ If you want to receive an "A" on this assignment, _make sure to follow the [rubr
 ### Peer Review
 
 During the quarter you will be asked to complete peer review exercises (due at the end of weeks 3, 6, and 10) where you provide feedback to your team about the level of effort you have observed. There are **no make-up peer reviews**, so please check Canvas for due dates and complete them on time. The [peer review rubric](../rubrics/peer-review.md) explains the grading criteria and the importance of this feedback.
+
+## Technical Work Requirements
+
+Each week, if a task requires code, you must commit and push it to an open pull request. No pushed code means a 0 for the week.
+
+You may write code locally or in a devcontainer, but **your final submissions must work in Docker.**
+
+All code paths must be documented somewhere in the repo and reproducible on a fresh clone:
+
+* If there is a Jupyter notebook, someone who has just cloned the repo should be able to follow the documented setup steps, hit "Run All," and reproduce your results.
+* If there is a data pipeline, someone who has just cloned the repo should be able to follow the documented setup steps, run `make run-pipeline` or equivalent, and reproduce your results.
+
+The full expectations are in the [coding standards](../coding-standards/coding-standards.md).
 
 ## Finals Week Deliverables
 
