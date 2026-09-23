@@ -77,21 +77,21 @@ Open your terminal and confirm all four of the following work.
 
     ls /mnt/Box
 
-**Read the contents of a real file.** This step matters: Box only downloads files on demand, so a successful `ls` does not prove the file itself is actually available. Substitute any file you know is in your Box folder:
+**Read the contents of a real file.** This step matters: Box only downloads files on demand, so a successful `ls` does not prove the file itself is actually available. In the [Box web app](https://uchicago.account.box.com/login), create a text file named `clinic-test.txt` in your top-level folder containing the word `hello`, then read it from the terminal:
 
-    head -c 20 "/mnt/Box/Get Started with Box.pdf"
+    cat /mnt/Box/clinic-test.txt
 
-This should print the first few bytes of the file rather than an error.
+This should print `hello` rather than an error.
 
-**Confirm Docker can mount it**, since this is how your project will actually reach the data:
+**Confirm Docker can read it**, since this is how your project will actually reach the data:
 
-    docker run --rm -v /mnt/Box:/data alpine ls /data
+    docker run --rm -v /mnt/Box:/data alpine cat /data/clinic-test.txt
 
 **Confirm writes sync back up.** Create a file from the terminal, then check that it appears in the [Box web app](https://uchicago.account.box.com/login):
 
-    echo "hello" > /mnt/Box/test.txt
+    echo "hello again" > /mnt/Box/clinic-test-2.txt
 
-Once all four work, you can delete `test.txt`.
+Once all four work, you can delete both test files.
 
 ## 5. Set your `DATA_DIR`
 
