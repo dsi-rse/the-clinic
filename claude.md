@@ -12,16 +12,9 @@ make
 
 **Important**: Do not use the local environment for serving the page. Always use Docker via the Makefile.
 
-## Recent Issues
+## Link Checker Notes
 
-### Link Checker Errors
+The linkspector GitHub Action (`.github/workflows/action.yml`) checks every link in the repo on each PR, not just changed lines. Failures show up on the separate "Linkspector" reviewdog check, not the `runner / linkspector` job.
 
-The linkspector GitHub Action has identified the following issues:
-
-1. **Directory read error**: `../students/#finals-week-deliverables` is being treated as a file when it's actually a directory
-
-2. **301 redirects**: Two PDF links in `projects/past/2025_Spring_projects.md` are returning 301 redirects:
-   - `https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2025-spring/IDI%20-%20Grievences.pdf` (line 59)
-   - `https://dsi-clinic.github.io/the-clinic/projects/one-pagers/2025-spring/Kids%20First%20Chicago.pdf` (line 71)
-
-These are likely caused by spaces in filenames requiring URL encoding.
+- The site lives at `https://clinic.ds.uchicago.edu`, and the repo lives in the `dsi-rse` org. Old `dsi-clinic.github.io` URLs return 404, so don't use them.
+- Student project repos live under `github.com/dsi-rse/` (one under `uchicago-dsi`); many are private, so `.linkspector.yml` ignores the `dsi-rse` prefix. Old `github.com/dsi-clinic/...` repo URLs only work through GitHub redirects, so use the current org and repo name.

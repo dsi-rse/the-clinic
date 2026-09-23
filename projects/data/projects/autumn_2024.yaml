@@ -10,7 +10,7 @@ projects:
   project_url: https://www.anl.gov/
   mentor: Bill Trok
   ta: Cassie Tang
-  github_link: https://github.com/dsi-clinic/2024-autumn-argonne
+  github_link: https://github.com/dsi-rse/clinic-2024-argonne
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Matthew Dearing
@@ -21,7 +21,7 @@ projects:
   project_url: https://computing.fnal.gov/kevin-pedro/
   mentor: Owen Melina & Alexander Bogatskiy
   ta: Ian Joffe
-  github_link: https://github.com/dsi-clinic/2023-Autumn-Clinic-Fermi-CaloDiffusionPaper
+  github_link: https://github.com/dsi-rse/clinic-2023-fermi-calo-diffusion-paper
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Oz Amram & Kevin Pedro
@@ -32,7 +32,7 @@ projects:
   project_url: https://computing.fnal.gov/giuseppe-cerati/
   mentor: Jie Jian
   ta: Justin Wang
-  github_link: https://github.com/dsi-clinic/2024-autumn-nugraph
+  github_link: https://github.com/dsi-rse/clinic-2024-nugraph
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Giuseppe Cerati
@@ -44,7 +44,7 @@ projects:
   project_url: https://cmap.illinois.gov/
   mentor: Anna Woodard
   ta: Cassie Tang
-  github_link: https://github.com/dsi-clinic/CMAP
+  github_link: https://github.com/dsi-rse/clinic-2024-cmap
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Holly Hudson
@@ -55,7 +55,7 @@ projects:
   project_url: https://internetequity.uchicago.edu/
   mentor: Jonatas Marques
   ta: Stella Chen
-  github_link: https://github.com/dsi-clinic/2024-autumn-IEI
+  github_link: https://github.com/dsi-rse/clinic-2024-iei
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Alexis Schrubbe
@@ -66,7 +66,7 @@ projects:
   project_url: ''
   mentor: Liya Ding
   ta: Justin Wang
-  github_link: https://github.com/dsi-clinic/2024-autumn-cls
+  github_link: https://github.com/dsi-rse/clinic-2024-cls
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Center for Living Systems
@@ -77,7 +77,7 @@ projects:
   project_url: https://www.morningstar.com
   mentor: Tim Hannifan & Patricia Chiril
   ta: Grace Shao
-  github_link: https://github.com/dsi-clinic/2024-autumn-morningstar
+  github_link: https://github.com/dsi-rse/clinic-2024-morningstar
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: <ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>
@@ -88,7 +88,7 @@ projects:
   project_url: https://www.invenergy.com
   mentor: Julia Mendelsohn & Nick Ross
   ta: ''
-  github_link: https://github.com/dsi-clinic/2024-autumn-invenergy
+  github_link: https://github.com/dsi-rse/clinic-2024-invenergy
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: <ul><li>Sophie Logan</li><li>Zoë Kimpel</li><li>Axel De Mendoza</li><li>Daniel
@@ -101,7 +101,7 @@ projects:
   project_url: https://www.foodsystem6.org/
   mentor: Meghan Hutch
   ta: Yukai Yang
-  github_link: https://github.com/dsi-clinic/2024-autumn-FS6
+  github_link: https://github.com/dsi-rse/clinic-2024-fs6
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Lauren Manning
@@ -112,7 +112,7 @@ projects:
   project_url: https://help.rescue.org
   mentor: Seyed Esmaeili & Susan Paykin
   ta: Yukai Yang
-  github_link: https://github.com/dsi-clinic/2024-autumn-IRC
+  github_link: https://github.com/dsi-rse/clinic-2024-irc
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Zachary Tausanovitch
@@ -123,7 +123,7 @@ projects:
   project_url: https://buildingdecarb.org/
   mentor: Satadisha Saha Bhowmick
   ta: Ian Joffe
-  github_link: https://github.com/dsi-clinic/2024-autumn-building-decarbon
+  github_link: https://github.com/dsi-rse/clinic-2024-building-decarbon
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: André Meurer
@@ -134,7 +134,7 @@ projects:
   project_url: https://www.rafiusa.org/
   mentor: Kelly Smalenberger
   ta: Austin Steinhart
-  github_link: https://github.com/dsi-clinic/2024-autumn-rafi-grocery
+  github_link: https://github.com/dsi-rse/clinic-2024-rafi-grocery
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Dylan Halpern
@@ -145,7 +145,7 @@ projects:
   project_url: https://www.lib.uchicago.edu/
   mentor: Susanna Lange
   ta: Austin Steinhart
-  github_link: https://github.com/dsi-clinic/2024-autumn-uchicago-library
+  github_link: https://github.com/dsi-rse/clinic-2024-uchicago-library
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: David Bottorff
@@ -156,7 +156,7 @@ projects:
   project_url: https://www.rafiusa.org/
   mentor: Kriti Sehgal
   ta: Stella Chen
-  github_link: https://github.com/dsi-clinic/2024-autumn-rafi-poultry
+  github_link: https://github.com/dsi-rse/clinic-2024-rafi-poultry
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Trevor Spreadbury
@@ -167,7 +167,7 @@ projects:
   project_url: ''
   mentor: Jingchao Fang
   ta: ''
-  github_link: https://github.com/dsi-clinic/2024-autumn-palmwatch-grievences
+  github_link: https://github.com/dsi-rse/clinic-2024-palmwatch-grievences
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Launa Greer
@@ -178,7 +178,7 @@ projects:
   project_url: ''
   mentor: Ganghua Wang
   ta: Grace Shao
-  github_link: https://github.com/dsi-clinic/2024-autumn-uni
+  github_link: https://github.com/dsi-rse/clinic-2024-uni
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Taraneh Matloob

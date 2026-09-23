@@ -26,7 +26,7 @@ November 21, 2024
 
 Join us for an information session about the Data Science Clinic, a hands-on, project-based course. In this course, students collaborate on real-world projects with industry partners, public interest organizations, and research labs. Students in the Data Science Clinic gain valuable data science experience while being guided by experienced mentors.
 
-At the info session, clinic leadership will discuss the application process, the course, and upcoming projects. This event will take place via Zoom. Find more information on our [website](https://dsi-clinic.github.io/the-clinic/).
+At the info session, clinic leadership will discuss the application process, the course, and upcoming projects. This event will take place via Zoom. Find more information on our [website](https://clinic.ds.uchicago.edu/).
 
 --- 
 

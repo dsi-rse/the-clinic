@@ -1,5 +1,11 @@
 dirs:
   - ./
 ignorePatterns:
-  - pattern: '^https://github.com/dsi-clinic/.*$'
+  - pattern: '^https://github.com/dsi-rse/.*$'
+  # Only reachable from the UChicago network
+  - pattern: '^https://account-request.cs.uchicago.edu/.*$'
+# Many sites (Stack Overflow, gnu.org, etc.) return 403 to headless Chrome
+aliveStatusCodes:
+  - 200
+  - 403
 useGitIgnore: true

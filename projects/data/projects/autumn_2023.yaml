@@ -13,7 +13,7 @@ projects:
   project_url: https://www.amfam.com/
   mentor: Anna Woodard
   ta: Ming-Chieh (Eddie) Liu
-  github_link: https://github.com/dsi-clinic/2023-autumn-amfam
+  github_link: https://github.com/dsi-rse/2023-autumn-amfam
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: <ul><li>Tim Rouse</li><li>Jessie Zhu</li></ul>
@@ -24,7 +24,7 @@ projects:
   project_url: https://www.anl.gov/
   mentor: Bill Trok & YJ Choe
   ta: Yuwei (Grant) Chen
-  github_link: https://github.com/dsi-clinic/2023-clinic-Argonne
+  github_link: https://github.com/dsi-rse/2023-clinic-Argonne
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Matthew Dearing
@@ -35,7 +35,7 @@ projects:
   project_url: https://www.anl.gov/
   mentor: Isaac Mehlhaff
   ta: Yuxin Ji (Jessica)
-  github_link: https://github.com/dsi-clinic/2023-autumn-argonne-fermi
+  github_link: https://github.com/dsi-rse/DSI-clinic-argonne-fermi
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Matthew Dearing
@@ -46,7 +46,7 @@ projects:
   project_url: https://climatecabinet.org/
   mentor: Trevor Spreadbury
   ta: Avery Schoen
-  github_link: https://github.com/dsi-clinic/2023-fall-clinic-climate-cabinet
+  github_link: https://github.com/uchicago-dsi/climate-cabinet-campaign-finance-tracker
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Caleb Braun
@@ -57,7 +57,7 @@ projects:
   project_url: https://www.chipublib.org/
   mentor: Tim Hannifan
   ta: Yiran Hao
-  github_link: https://github.com/dsi-clinic/2023-autumn-cpl
+  github_link: https://github.com/dsi-rse/2023-autumn-cpl
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Abigail Sullivan
@@ -68,7 +68,7 @@ projects:
   project_url: https://computing.fnal.gov/kevin-pedro/
   mentor: Rituparno Mandal & Peter Lu
   ta: Ming-Chieh (Eddie) Liu
-  github_link: https://github.com/dsi-clinic/2023-Autumn-Clinic-Fermi-CaloDiffusionPaper
+  github_link: https://github.com/dsi-rse/clinic-2023-fermi-calo-diffusion-paper
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Oz Amram & Kevin Pedro
@@ -90,7 +90,7 @@ projects:
   project_url: https://www.hapahi.org/
   mentor: Rahim Rasool & Trevor Spreadbury
   ta: Victor Perez Martin
-  github_link: https://github.com/dsi-clinic/2023-fall-clinic-hawaii-pesticides
+  github_link: https://github.com/dsi-rse/2023-fall-clinic-hawaii-pesticides
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: <ul><li>Fern Ānuenue Holland</li><li>Anne Frederick</li><li>Emily
@@ -102,7 +102,7 @@ projects:
   project_url: https://internetequity.uchicago.edu/
   mentor: Tim Hannifan & Jonatas Marques
   ta: Soham Gurjar
-  github_link: https://github.com/dsi-clinic/2023-autumn-internet-equity
+  github_link: https://github.com/dsi-rse/2023-autumn-internet-equity
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Alexis Schrubbe
@@ -113,7 +113,7 @@ projects:
   project_url: https://www.rescue.org/
   mentor: Rahim Rasool
   ta: Avery Schoen
-  github_link: https://github.com/dsi-clinic/2023-autumn-irc
+  github_link: https://github.com/dsi-rse/2023-autumn-irc
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Atish Gonsalves
@@ -124,7 +124,7 @@ projects:
   project_url: https://www.morningstar.com/
   mentor: Patricia Chiril & David Uminsky
   ta: Soham Gurjar
-  github_link: https://github.com/dsi-clinic/2023-autumn-morningstar
+  github_link: https://github.com/dsi-rse/2023-autumn-morningstar
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: <ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>
@@ -135,7 +135,7 @@ projects:
   project_url: https://www.perpetualuse.org/
   mentor: Rahim Rasool
   ta: Yiran Hao
-  github_link: https://github.com/dsi-clinic/2023-clinic-perpetual
+  github_link: https://github.com/dsi-rse/2023-clinic-perpetual
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Ellie Moss
@@ -170,7 +170,7 @@ projects:
   project_url: https://coe.uni.edu/curriculum-instruction/directory/taraneh-matloob-haghanikar-phd
   mentor: Satadisha Saha Bhowmick
   ta: Victor Perez Martin
-  github_link: https://github.com/dsi-clinic/2023-autumn-matloob-lab
+  github_link: https://github.com/dsi-rse/2023-autumn-matloob-lab
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Taraneh Matloob
