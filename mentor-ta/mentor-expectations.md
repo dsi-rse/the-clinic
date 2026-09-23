@@ -9,29 +9,27 @@ This document contains a rough outline of the expectations for the mentor. At th
 1. **Project Leadership and Management**
     * General project oversight
     * Guide overall project direction and objectives
-    * Ensure timely completion of client deliverables and documentation
-    * Provide technical project guidance and direction based on your own expertise
-2. **Weekly Task Assignment and Assessment**
+    * Stay on top of student progress through [weekly cycle](#the-weekly-cycle), ensuring timely completion of client deliverables and documentation
     * Assign each student a task each week with clear acceptance criteria
-    * Grade the weekly report and work product, plus draft videos and the one-pager
-    * More information can be found [below](#the-weekly-cycle)
-3. **Communication with External Partner**
+    * Provide technical project guidance and direction based on your own expertise
+2. **Communication with External Partner**
     * Act as a liaison between the external mentor and the students
     * Make sure that meetings are productive, students are attending and acting professionally
     * Scheduling and reacting to changes from the partners
     * Do not commit to new project directions during the external mentor meeting
-4. **Communication**
+3. **Communication with Team**
     * Be responsive to student and TA needs, making sure to communicate regularly via Slack
-5. **Teaching**
+4. **Teaching**
     * Provide resources for learning specific topics or technologies
     * Work with TAs to guide student learning
     * Ensure students are doing reasonable data science — not testing on training sets, not making claims they don't understand, not reporting "100% accuracy" when that is not achievable
-6. **Project Guardrail**
+5. **Project Guardrail**
     * Act as a guardrail on the project and raise concerns based on your understanding of people, group dynamics and generally "being a responsible adult"
+    * Escalate issues to clinic staff when needed
 
 ## The Weekly Cycle
 
-Student work lives in GitHub. Each week, students open issues describing their tasks with clear acceptance criteria, push code to pull requests, and post their progress as comments on those issues. Your job is to review that work before the meeting, run the meeting, and assign the next week's tasks.
+Student work lives in GitHub. Each week, students open issues describing their tasks with clear acceptance criteria, push code to pull requests, and post their progress as comments on their issues. Your job is to review that work before the meeting, run the meeting, and assign the next week's tasks. You are not expected to go deep into the project code -- that is the TA's responsibility.
 
 ### Before Each Meeting
 
@@ -67,8 +65,8 @@ Detailed meeting mechanics are in [How to Run a Mentor Meeting](./how-to-run-a-m
 
 If a student did not finish last week's tasks — meaning nothing was merged to `main` — you decide which of these applies:
 
-1. **Larger than expected.** Enough work remains that it can be the student's task again.
-2. **Poorly scoped.** Not doable or no longer relevant. Close the issue as `not planned` and open a new issue referencing the old one.
+1. **Larger than expected, but still reasonable.** Enough work remains that it can be the student's task again. Take time to consider whether it is still too big to be completed in the next week (it usually is). If it is, this is case 2.
+2. **Poorly scoped or unreasonably large.** Not doable, no longer relevant, or much too big to complete in the next week. Close the issue as `not planned` and open a new issue referencing the old one.
 3. **Nearly done.** Only a small amount remains (such as replying to TA review comments). The student opens new tasks for next week and must also complete the old one, referenced in the new issue.
 4. **No effort.** The task was well scoped and the student simply didn't work. Repeat the task and dock participation.
 
@@ -105,7 +103,7 @@ Do not fall behind on grading and establish habits early!
 * Act as a communication conduit between the external mentor and the team.
 * Ensure students and TAs are completing their responsibilities.
 * Ensure the project is staying on track, and reach out for help if it is not.
-* Raise concerns to clinic administration.
+* Raise concerns to clinic staff.
 * Provide qualitative feedback on students.
 
 ## Common student issues
@@ -156,7 +154,7 @@ A student wants to do something not in Python?
 
 I'm not sure where to take a project next?
 
-```Usually the external mentor will have a good idea. If not, `/clinic-project-review` will propose a menu of candidate tasks — and reach out to clinic administration.```
+```Usually the external mentor will have a good idea. If not, `/clinic-project-review` will propose a menu of candidate tasks — and reach out to clinic staff.```
 
 ## Student Issues:
 

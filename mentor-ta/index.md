@@ -49,7 +49,7 @@ The formats and grading are in the [weekly tasks template](../templates/weekly-t
 * [TA Training Presentation](https://dsi-rse.github.io/ta-training/) - Interactive training slides
 
 ## Escalation
-* [Escalation and Common Failure Modes](./escalation.md) - who to reach out to, what to do when a project stalls, and the usual ways things fall apart
+* [Escalation and Common Failure Modes](./escalation.md) - who to reach out to and issues you might encounter.
 
 ## Rubrics
   * [Weekly Report and Work Product](../rubrics/weekly-report-rubric.md)

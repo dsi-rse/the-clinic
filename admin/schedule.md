@@ -17,8 +17,8 @@ The purpose of this document is to centralize resources and create a timeline of
     - students with no issues opened
     - issues without clear acceptance criteria
     - projects that look like they are stalling
-- Follow up on anything `/clinic-review` surfaces. The most common stall pattern is a task repeated week after week with nothing merged to `main` — that needs administrative intervention, not another repetition. See the [escalation doc](../mentor-ta/escalation.md).
-- Check the clinic TAs Slack channel for the weekly per-project TA updates. A missing update is itself a signal.
+- Follow up on anything `/clinic-review` surfaces. See the [escalation doc](../mentor-ta/escalation.md).
+- Check the clinic TAs Slack channel for the weekly per-project TA updates. 
 
 ## Weekly Calendar
 
@@ -86,7 +86,9 @@ Applications close on Friday of this week. After the deadline:
 The following tasks depend upon having a list of confirmed students and projects:
 - Create Slack channels. Add students, mentors, and TAs to private channels and invite users as single channel guests. We pay a membership fee per head for regular users and that is not necessary for these students
 - Add the clinic Slack bot to each project channel so it posts the weekly thread where students paste their GitHub links.
-- Create GitHub repositories. Add students, mentors, and TAs. Protect `main` before granting students access.
+- Create GitHub repositories. Use [the clinic template](https://github.com/dsi-rse/clinic-template) where relevant.
+- Protect `main` on the repositories before granting students access.
+- Add students, mentors, and TAs to the GitHub repositories. 
 - Send the DSI cluster admin a list of CNET user IDs and associated projects to grant them access to the cluster.
 - Slack message for Mentors & TAs:
 ```

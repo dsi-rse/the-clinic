@@ -8,7 +8,7 @@ The meeting has two jobs: evaluate last week's work, and assign next week's task
 
 The weekly meeting aims to:
 
-1. Have each student report on the work completed in the past week.
+1. Have each student report on the work completed in the past week. Specifically requesting slides is recommended.
 2. Assign a specific task to each student for the coming week, with clear acceptance criteria.
 3. Address any outstanding issues, blockers, or problems.
 
@@ -17,7 +17,7 @@ The weekly meeting aims to:
 - **Run `/clinic-project-review`** on the project repository. It reports actual progress against last week's tasks, who hasn't pushed, what isn't merged to `main` yet, whether the TA has reviewed the open code, and a menu of candidate tasks for next week.
 - **Read the students' weekly reports** — the comments they posted on last week's issues — and skim the open pull requests. This tells you what they were expected to accomplish versus what they actually did.
 - **Project Direction**: Take a moment to consider the project's direction. Think about the next steps you would take if you were directly involved in the project work.
-- **Decide before you walk in** roughly what each student should be doing next week. Don't design the week live in the meeting.
+- **Decide before you walk in** roughly what each student should be doing next week. Attempting to figure this out in the meeting can be very difficult and we want to avoid students leaving the meeting confused about their next week responsibilities. This can lead to an endless loop of students working on the same task week after week. 
 
 ## Example Meeting Agenda
 
@@ -32,7 +32,7 @@ Establishing a consistent process for the meetings is crucial. The most successf
 3. **Student Updates** (10-15 minutes):
    - Ask each student to provide a concise update on their assigned task (<2 minutes per student). Slides are recommended and students should share their screens.
    - **Use a timer if necessary.** Do not let one long update dominate the meeting.
-   - **Do not debug code in the meeting.** Send it to the TA session.
+   - **Do not debug code in the meeting.** Send it to the TA session or escalate to clinic admin.
    - Ensure work products are submitted, in a pull request.
    - Table any issues for later discussion.
    - Be comfortable cutting students off to make sure that everyone gives their update.
@@ -46,10 +46,6 @@ Establishing a consistent process for the meetings is crucial. The most successf
 
 1. Confirm that students are clear about their tasks for the next week, and remind them that the issues are due by midnight tonight with links posted to the Slack thread.
 2. Finalize any meetings with external clients, ensuring they are scheduled properly with necessary Zoom links.
-
-### If Nothing Got Merged
-
-If a student's work didn't land, decide on the spot which case you're in — larger than expected, poorly scoped, nearly done, or no effort — and say so out loud. The four cases and what to do about each are in [Mentor Expectations](./mentor-expectations.md#carrying-tasks-over). Repeating "actually finish it" week after week without changing the scope is the single most common way a project stalls; see [escalation and common failure modes](./escalation.md).
 
 ## Lessons Learned
 
