@@ -16,8 +16,8 @@ Note that if there are any issues filling this out with unresponsive group mates
 | | [Name #2] | 
 | | [Name #3]
 | | [Name #4]
-| Name of Teaching Assistant (if applicable): | |
-| Name of your Faculty Mentor: | | 
+| Name of Teaching Assistant: | |
+| Name of your Internal Mentor: | | 
 
 
 ### Meeting Times

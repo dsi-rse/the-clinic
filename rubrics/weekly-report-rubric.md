@@ -7,7 +7,7 @@ title: "Weekly Report Rubric"
 The weekly report summarizes the work that each team member completed in the previous week. It is posted as a comment on each of last week's GitHub issues, following the [weekly report template](../templates/weekly-report.md), alongside the code pushed to GitHub.
 
 ## Requirements
-Each student pushes their work to GitHub (code in an open pull request), comments on each of last week's issues using the status format in the template, and posts a link to those comments in the weekly Slack thread for the project.
+Each student pushes their work to GitHub (code in an open pull request, reports in issue comments), comments on each of last week's issues using the status format in the template, and posts a link to those comments in the weekly Slack thread for the project. While we encourage the use of LLMs for coding, these reports must be written entirely by the student.
 
 ## Logistics and Timing
 The weekly report is due at midnight on the day before the mentor session.
@@ -73,6 +73,7 @@ Mentors may apply additional grading standards to the rubric below.
       <td>
         <ul>
           <li>Zero effort / not submitted.</li>
+          <li>No comment has been made to the issues describing tasks.</li>
           <li><strong>Automatic 0:</strong> a task required code and no code was pushed to GitHub.</li>
         </ul>
       </td>

@@ -39,11 +39,6 @@ It is expected that graduate students will work a minimum of 15 hours each week 
 
 The weekly cycle runs from one mentor session to the next and is tracked entirely in GitHub. After each mentor session students open GitHub issues describing their tasks for the coming week with clear acceptance criteria, and post links to those issues in their project's Slack thread. Before the next mentor session students push their work to a pull request and post their progress as a comment on each issue. A full description of what each student owes each week is [here](../students/index.md#your-weekly-responsibilities).
 
-Two consequences of this worth stating up front:
-
-* **A task is not complete until the pull request addressing it is merged to `main`.**
-* **If a task requires code and no code is pushed, the student receives a 0 for that week.**
-
 Students may write code locally or in devcontainers, but final submissions must work in Docker and must be reproducible on a fresh clone of the repository.
 
 ### On Communication
