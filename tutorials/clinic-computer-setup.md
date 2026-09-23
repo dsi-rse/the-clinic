@@ -108,19 +108,19 @@ On Mac, Box Drive syncs to `~/Library/CloudStorage/Box-Box/` and requires no fur
 
 On Windows, Box Drive is a Windows application and the folder it creates cannot be read from WSL without additional configuration. Please see [these instructions](./box-wsl.md).
 
-**Verification:** First, in the [Box web app](https://uchicago.account.box.com), create a text file named `clinic-test.txt` in your top-level folder containing the word `hello`. Then open your terminal and confirm you can list your Box folder, read that file, and read it from inside Docker. On Mac:
+**Verification:** First, in the [Box web app](https://uchicago.account.box.com), create a markdown file named `clinic-test.md` in your top-level folder containing the word `hello`. Then open your terminal and confirm you can list your Box folder, read that file, and read it from inside Docker. On Mac:
 
     ls ~/Library/CloudStorage/Box-Box/
-    cat ~/Library/CloudStorage/Box-Box/clinic-test.txt
-    docker run --rm -v ~/Library/CloudStorage/Box-Box:/data alpine cat /data/clinic-test.txt
+    cat ~/Library/CloudStorage/Box-Box/clinic-test.md
+    docker run --rm -v ~/Library/CloudStorage/Box-Box:/data alpine cat /data/clinic-test.md
 
 Each `cat` should print `hello`. On Windows, run the same three commands against `/mnt/Box` instead. Creating the file in the web app matters because Box only downloads files on demand, so a successful `ls` does not prove the file itself is available.
 
 Finally, confirm that writes sync back up. Create a file from the terminal and check that it appears in the Box web app:
 
-    echo "hello again" > ~/Library/CloudStorage/Box-Box/clinic-test-2.txt
+    echo "hello again" > ~/Library/CloudStorage/Box-Box/clinic-test-2.md
 
-On Windows, use `/mnt/Box/clinic-test-2.txt` instead. Once everything works, you can delete both test files.
+On Windows, use `/mnt/Box/clinic-test-2.md` instead. Once everything works, you can delete both test files.
 
 ## 9. DSI Cluster
 
