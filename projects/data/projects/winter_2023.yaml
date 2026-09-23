@@ -8,7 +8,7 @@ projects:
   project_url: https://www.anl.gov/
   mentor: Rahim Rasool & Trevor Spreadbury
   ta: ''
-  github_link: https://github.com/dsi-clinic/2023-clinic-Argonne
+  github_link: https://github.com/dsi-rse/2023-clinic-Argonne
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Matthew Dearing
@@ -41,7 +41,7 @@ projects:
   project_url: https://www.impactforequity.org/
   mentor: Riley Tucker
   ta: Kenia Godinez Nogueda
-  github_link: https://github.com/dsi-clinic/2022-bpi-clinic
+  github_link: https://github.com/dsi-rse/2022-bpi-clinic
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: <ul><li>Amy Thompson</li><li>Loren Jones</li></ul>
@@ -52,7 +52,7 @@ projects:
   project_url: https://drw.com/
   mentor: Nick Ross
   ta: ''
-  github_link: https://github.com/dsi-clinic/2023-clinic-drw
+  github_link: https://github.com/dsi-rse/2023-clinic-drw
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: Ian Adam
@@ -63,7 +63,7 @@ projects:
   project_url: https://computing.fnal.gov/michael-kirby/
   mentor: Peter Lu
   ta: Todd Nief
-  github_link: https://github.com/dsi-clinic/2023-clinic-fermi-tag
+  github_link: https://github.com/dsi-rse/2023-clinic-fermi-tag
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: <ul><li>Michael Kirby</li><li>Meghna Bhattacharya</li></ul>
@@ -74,7 +74,7 @@ projects:
   project_url: https://www.firstrepublic.com/
   mentor: Nick Ross
   ta: ''
-  github_link: https://github.com/dsi-clinic/2023-clinic-first-republic-bank
+  github_link: https://github.com/dsi-rse/2023-clinic-first-republic-bank
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: <ul><li>Chris Csiszar</li><li>Mark Woodworth</li></ul>
@@ -85,7 +85,7 @@ projects:
   project_url: https://www.greenwave.org/
   mentor: Trevor Spreadbury
   ta: ''
-  github_link: https://github.com/dsi-clinic/2023-clinic-greenwave
+  github_link: https://github.com/dsi-rse/2023-clinic-greenwave
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Kendall Barbery
@@ -96,7 +96,7 @@ projects:
   project_url: https://invenergy.com/
   mentor: Anna Woodard
   ta: Utkarsh Tripathi
-  github_link: https://github.com/dsi-clinic/2022-Invenergy-clinic
+  github_link: https://github.com/dsi-rse/2022-Invenergy-clinic
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: <ul><li>Zoë Kimpel</li><li>Kenneth Parkhill</li></ul>
@@ -107,7 +107,7 @@ projects:
   project_url: https://www.morningstar.com/
   mentor: David Uminsky & Patricia Chiril
   ta: Utkarsh Tripathi
-  github_link: https://github.com/dsi-clinic/2023-clinic-morningstar
+  github_link: https://github.com/dsi-rse/2023-clinic-morningstar
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: <ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>
@@ -129,7 +129,7 @@ projects:
   project_url: https://www.perpetualuse.org/
   mentor: Rahim Rasool
   ta: ''
-  github_link: https://github.com/dsi-clinic/2023-clinic-perpetual
+  github_link: https://github.com/dsi-rse/2023-clinic-perpetual
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Ellie Moss
@@ -151,7 +151,7 @@ projects:
   project_url: https://risc.uchicago.edu/
   mentor: Jeffrey Negrea
   ta: Anthony Kanellopoulos
-  github_link: https://github.com/dsi-clinic/2023-clinic-risc
+  github_link: https://github.com/dsi-rse/2023-clinic-risc
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Noah Duncan
@@ -162,7 +162,7 @@ projects:
   project_url: https://profiles.uchicago.edu/profiles/display/17338286
   mentor: Yuetian Luo
   ta: Anthony Kanellopoulos
-  github_link: https://github.com/dsi-clinic/2023-clinic-neurocritical-care
+  github_link: https://github.com/dsi-rse/2023-clinic-neurocritical-care
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Dr. Ali Mansour
