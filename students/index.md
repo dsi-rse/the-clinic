@@ -95,7 +95,7 @@ Your weekly deliverables live in GitHub. There is no document to upload.
 
 **The weekly report** is a comment you post on those same issues before your next mentor session, marking each piece of acceptance criteria as `complete`, `pending review`, `pending changes`, `in progress`, or `no progress shared`, with a short explanation. The format is in the [weekly report template](../templates/weekly-report.md).
 
-Both are graded together as a single 0-5 score each week by your mentor. The rubric is [here](../rubrics/weekly-report-rubric.md).
+Each is graded separately on a 0-5 scale every week by your mentor. See the [weekly tasks rubric](../rubrics/weekly-tasks-rubric.md) and the [weekly report rubric](../rubrics/weekly-report-rubric.md).
 
 Two things worth repeating:
 

@@ -42,12 +42,12 @@ From the first mentor session onward, the same cycle repeats every week. It runs
         <tr>
             <td>Before the mentor session</td>
             <td>Mentor</td>
-            <td>Run <code>/clinic-project-review</code>, review student work, grade the weekly report and work product (0-5), escalate anything that needs it</td>
+            <td>Run <code>/clinic-project-review</code>, review student work, grade the weekly tasks (0-5) and weekly report (0-5), escalate anything that needs it</td>
         </tr>
     </tbody>
 </table>
 
-Formats and grading: [weekly tasks template](../templates/weekly-tasks.md), [weekly report template](../templates/weekly-report.md), [weekly report and work product rubric](../rubrics/weekly-report-rubric.md).
+Formats and grading: [weekly tasks template](../templates/weekly-tasks.md), [weekly report template](../templates/weekly-report.md), [weekly tasks rubric](../rubrics/weekly-tasks-rubric.md), [weekly report rubric](../rubrics/weekly-report-rubric.md).
 
 ## Week-Specific Items
 

@@ -1,33 +1,27 @@
 ---
-title: "Weekly Report and Work Product Rubric"
+title: "Weekly Report Rubric"
 ---
 
-# Weekly Report and Work Product Rubric
+# Weekly Report Grading Rubric
 
-This rubric covers the full weekly cycle for each student: the tasks they opened as GitHub issues, the code and artifacts they pushed, and the weekly report they posted as a comment on those issues.
+The weekly report summarizes the work that each team member completed in the previous week. It is posted as a comment on each of last week's GitHub issues, following the [weekly report template](../templates/weekly-report.md), alongside the code pushed to GitHub.
 
-There is **one score per student per week**, on a 0-5 scale, assigned by the project mentor. This replaces the separate planning and progress document grades used in prior quarters.
+## Requirements
+Each student pushes their work to GitHub (code in an open pull request), comments on each of last week's issues using the status format in the template, and posts a link to those comments in the weekly Slack thread for the project.
 
-## What The Student Owes Each Week
-
-| When | What | Where |
-| --- | --- | --- |
-| Midnight on the day of the mentor session | Issues opened for next week's tasks with clear acceptance criteria, links posted to the Slack thread | GitHub + Slack |
-| Throughout the week | Attend two TA sessions, make steady progress, respond to TA code reviews | TA sessions + GitHub |
-| Midnight on the day before the mentor session | Code committed and pushed in a pull request; weekly report comment on each issue; links posted to the Slack thread | GitHub + Slack |
-| At the mentor session | Short update presented to the team | Mentor session |
-
-Full details are in the [weekly tasks template](../templates/weekly-tasks.md) and the [weekly report template](../templates/weekly-report.md).
+## Logistics and Timing
+The weekly report is due at midnight on the day before the mentor session.
 
 ## Grading
-
-Mentors may apply additional grading standards on top of the rubric below.
+Grades are assigned on a scale of 0-5 points individually to each student. Grades are recorded individually for each student in Canvas; filtering the gradebook by project group makes this easier.
 
 Three points of emphasis:
+  1. Don't fall behind on grading!
+  2. Make sure to establish standards early. Giving everyone a 5 for everything is going to encourage people to slack; make sure that the high performers are rewarded and people who are slacking know that you are aware of their lack-of-effort.
+  3. Make sure to establish a "no new issues raised during the mentor session" mindset. Students will use getting stuck as an excuse to not finish their work. Students having issues should raise those issues ahead of time, with their TA or in the project Slack channel.
 
-1. Don't fall behind on grading.
-2. Establish standards early. Giving everyone a 5 for everything encourages people to slack; make sure high performers are rewarded and people who are not working know that you noticed.
-3. Establish a "no new issues raised during the mentor session" mindset. Students will use getting stuck as an excuse for not finishing their work. Blockers belong in the TA session or the Slack channel during the week.
+
+Mentors may apply additional grading standards to the rubric below.
 
 <table>
   <thead>
@@ -41,11 +35,8 @@ Three points of emphasis:
       <td>5</td>
       <td>
         <ul>
-          <li>Tasks were opened on time as issues with clear acceptance criteria and links posted to the Slack thread.</li>
-          <li>All acceptance criteria are <code>complete</code> or <code>pending review</code>, with code pushed in a pull request.</li>
-          <li>The weekly report is posted on the issue, statuses are accurate, and each status has a useful description.</li>
-          <li>Code is conveniently shared (a proper pull request that complies with project coding standards) and runs / reproduces with little effort.</li>
-          <li>Student demonstrated significant effort across the week and raised blockers promptly rather than at the mentor session.</li>
+          <li>A report comment is posted on every issue and linked in the Slack thread. Every piece of acceptance criteria has an accurate status and a descriptive, complete, easy-to-follow note. The write-up is readable and understandable with consistent formatting and style. Student demonstrated significant effort over the course of the week and did not procrastinate or reach out for assistance in an untimely manner.</li>
+          <li>Any code produced is conveniently shared (a proper pull request linked from the issue that complies with project coding standards) and can be run / reproduced with little effort.</li>
         </ul>
       </td>
     </tr>
@@ -53,9 +44,8 @@ Three points of emphasis:
       <td>4</td>
       <td>
         <ul>
-          <li>Everything was submitted, but with minor problems: a thin status description, a slightly late Slack post, or criteria left <code>in progress</code> with a good explanation.</li>
-          <li>Code is in a pull request and can be run / reproduced, but requires changing a few lines.</li>
-          <li>Student demonstrated significant effort across the week and did not procrastinate or reach out for assistance in an untimely manner.</li>
+          <li>A report comment is posted on every issue and linked in the Slack thread, and the notes are descriptive, mostly complete, and relatively easy to follow. Write-ups may have minor presentation issues (grammar / inconsistent style or formatting) which only mildly affect readability. Student demonstrated significant effort over the course of the week and did not procrastinate their work or reach out for assistance in an untimely manner.</li>
+          <li>Any code produced is conveniently shared (a proper pull request linked from the issue that complies with project coding standards) and can be run / reproduced, but requires changing a few lines.</li>
         </ul>
       </td>
     </tr>
@@ -63,16 +53,16 @@ Three points of emphasis:
       <td>3</td>
       <td>
         <ul>
-          <li>All pieces present, but the report is hard to follow or the statuses do not match what is actually on GitHub.</li>
-          <li>Code produced requires back-and-forth with the student in order to obtain or reproduce it.</li>
-          <li><strong>Student got "stuck" and raised the concern during the mentor session rather than beforehand.</strong></li>
-          <li>Student did not respond to TA review comments, is not attending meetings on time, or is not contributing their fair share.</li>
+          <li>All report comments present, but the notes have presentation issues which affect readability (grammar / inconsistent style or formatting), or the reported statuses don't match what is actually on GitHub. Student did not complete their work due to planning (procrastination) or not getting in touch with the TA or Mentor in a timely manner.</li>
+          <li>Any code produced requires back-and-forth with the student in order to obtain or reproduce.</li>
+          <li><strong>Student got "stuck" on an area and raised the concern during the mentor session, rather than beforehand.</strong></li>
+          <li>Student is not attending meetings on time, is not contributing their fair share of the work, is not responding to TA review comments, or is otherwise not meeting expectations for effort and participation.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>2</td>
-      <td>Missing pieces — no issues opened, no Slack links posted, or a report with no real content. Work incomplete.</td>
+      <td>Missing information (for example, missing report comments or no Slack link), significant presentation, and content issues. Work incomplete.</td>
     </tr>
     <tr>
       <td>1</td>
@@ -82,7 +72,7 @@ Three points of emphasis:
       <td>0</td>
       <td>
         <ul>
-          <li>Nothing submitted, or zero effort.</li>
+          <li>Zero effort / not submitted.</li>
           <li><strong>Automatic 0:</strong> a task required code and no code was pushed to GitHub.</li>
         </ul>
       </td>
@@ -90,6 +80,6 @@ Three points of emphasis:
   </tbody>
 </table>
 
-## Late Policy
 
-Late submissions made within 24 hours of the deadline are automatically docked two points. Submissions after that time receive a grade of zero.
+## Late Policy
+Late submissions made within 24 hours of the deadline will automatically be docked two points. Submissions after that time will receive a grade of zero. Comment, push, and Slack post timestamps (as shown on GitHub and Slack) are used to determine whether a submission is late.

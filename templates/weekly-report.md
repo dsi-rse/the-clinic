@@ -56,4 +56,4 @@ Getting stuck is normal. Getting stuck and not telling anyone until the mentor s
 
 ## Grading
 
-The weekly report and weekly tasks are graded together on a 0-5 scale. See the [Weekly Report and Work Product rubric](../rubrics/weekly-report-rubric.md).
+The weekly report is graded on a 0-5 scale. See the [Weekly Report rubric](../rubrics/weekly-report-rubric.md).

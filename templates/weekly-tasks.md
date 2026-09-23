@@ -62,4 +62,4 @@ If a student did not finish last week's tasks (meaning nothing was merged to `ma
 
 ## Grading
 
-Weekly tasks and the weekly report are graded together on a 0-5 scale. See the [Weekly Report and Work Product rubric](../rubrics/weekly-report-rubric.md).
+Weekly tasks are graded on a 0-5 scale. See the [Weekly Tasks rubric](../rubrics/weekly-tasks-rubric.md).

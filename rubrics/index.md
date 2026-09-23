@@ -2,12 +2,13 @@
 
 This page contains all grading rubrics used in the Data Science Clinic. These rubrics help ensure consistent evaluation across projects and provide clear expectations for deliverables.
 
-## Weekly Rubric
+## Weekly Rubrics
 
-### [Weekly Report and Work Product Rubric](./weekly-report-rubric.md)
-Used to assign each student a single 0-5 score every week, covering the GitHub issues they opened for their tasks, the code and artifacts they pushed, and the weekly report they posted as a comment on those issues. Replaces the separate planning and progress document rubrics used in prior quarters.
+### [Weekly Tasks Rubric](./weekly-tasks-rubric.md)
+Used to evaluate the GitHub issues each student opens after the mentor session describing their tasks for the coming week. Covers task descriptions, acceptance criteria, and timeliness. Students are graded against the [weekly tasks template](../templates/weekly-tasks.md).
 
-The formats students are graded against are the [weekly tasks template](../templates/weekly-tasks.md) and the [weekly report template](../templates/weekly-report.md).
+### [Weekly Report Rubric](./weekly-report-rubric.md)
+Used to evaluate the weekly report each student posts as a comment on last week's issues, along with the code they pushed to GitHub. Assesses progress made, accuracy of reported statuses, and how blockers were handled. Students are graded against the [weekly report template](../templates/weekly-report.md).
 
 ## Presentation Rubrics
 

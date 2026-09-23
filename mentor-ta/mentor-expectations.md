@@ -72,7 +72,7 @@ If a student did not finish last week's tasks — meaning nothing was merged to 
 
 ## Grading Requirements and How to Grade
 
-To keep projects moving, each student receives a single 0-5 score per week covering their weekly tasks, pushed work product, and weekly report. The full rubric is the [weekly report and work product rubric](../rubrics/weekly-report-rubric.md).
+To keep projects moving, each student receives two 0-5 scores per week: one for their weekly tasks and one for their weekly report and pushed work product. The full rubrics are the [weekly tasks rubric](../rubrics/weekly-tasks-rubric.md) and the [weekly report rubric](../rubrics/weekly-report-rubric.md).
 
 Two rules worth internalizing:
 

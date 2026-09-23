@@ -37,7 +37,7 @@ Student work lives in GitHub. Each week:
 * **Mentors** run `/clinic-project-review` before each meeting, run the meeting, and assign next week's tasks with clear acceptance criteria.
 * **Clinic administration** runs `/clinic-review` across all projects to catch students with no commits, students with no issues, issues without clear acceptance criteria, and projects that look like they are stalling.
 
-The formats and grading are in the [weekly tasks template](../templates/weekly-tasks.md), the [weekly report template](../templates/weekly-report.md), and the [weekly report and work product rubric](../rubrics/weekly-report-rubric.md).
+The formats and grading are in the [weekly tasks template](../templates/weekly-tasks.md), the [weekly report template](../templates/weekly-report.md), the [weekly tasks rubric](../rubrics/weekly-tasks-rubric.md), and the [weekly report rubric](../rubrics/weekly-report-rubric.md).
 
 ## Weekly Calendar
 [Weekly Calendar](../syllabus/weekly-plan.md)
@@ -52,7 +52,8 @@ The formats and grading are in the [weekly tasks template](../templates/weekly-t
 * [Escalation and Common Failure Modes](./escalation.md) - who to reach out to and issues you might encounter.
 
 ## Rubrics
-  * [Weekly Report and Work Product](../rubrics/weekly-report-rubric.md)
+  * [Weekly Tasks](../rubrics/weekly-tasks-rubric.md)
+  * [Weekly Report](../rubrics/weekly-report-rubric.md)
   * [Peer Review](../rubrics/peer-review.md)
   * [Final Email](../rubrics/final-email.md)
   * [Mid-quarter presentation](../rubrics/mid-quarter-presentation-rubric.md) 
