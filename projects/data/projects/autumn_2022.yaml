@@ -40,7 +40,7 @@ projects:
   project_url: https://www.impactforequity.org/
   mentor: Amanda Kube
   ta: Kenia Godinez Nogueda
-  github_link: https://github.com/dsi-clinic/2022-bpi-clinic
+  github_link: https://github.com/dsi-rse/2022-bpi-clinic
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: <ul><li>Amy Thompson</li><li>Loren Jones</li></ul>
@@ -51,7 +51,7 @@ projects:
   project_url: ''
   mentor: Jeffrey Negrea & Riley Tucker
   ta: Todd Nief
-  github_link: https://github.com/dsi-clinic/2022-citizendata-clinic
+  github_link: https://github.com/dsi-rse/2022-citizendata-clinic
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: Kyle Redfield
@@ -73,7 +73,7 @@ projects:
   project_url: https://invenergy.com/
   mentor: Anna Woodard & Trevor Spreadbury & Peter Lu
   ta: Utkarsh Tripathi
-  github_link: https://github.com/dsi-clinic/2022-Invenergy-clinic
+  github_link: https://github.com/dsi-rse/2022-Invenergy-clinic
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: <ul><li>Zoë Kimpel</li><li>Kenneth Parkhill</li></ul>

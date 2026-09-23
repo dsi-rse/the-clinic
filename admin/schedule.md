@@ -57,7 +57,7 @@ Applications close on Friday of this week. After the deadline:
 - Walk through of Ryerson Annex to verify that all technology works as expected.
 - Review applications and match students to projects.
     - Quickly review all resumes before doing any matches. Students tend to lie about (a) graduation date, (b) program and (c) how much CS they actually have. A quick skim of the resume can confirm these.
-    - Matching is done via the code in the [clinic automation repository](https://github.com/dsi-clinic/clinic-automation). You can use claude to do it (there is a pretty good AGENTS.md file) in the matching directory. 
+    - Matching is done via the code in the [clinic automation repository](https://github.com/dsi-rse/clinic-automation). You can use claude to do it (there is a pretty good AGENTS.md file) in the matching directory. 
     - Before sending out matches verify that all undergrads who are actually 4th years are matched. Generally we let in all 3rd years too, but read resumes to make sure they are actually 3rd years.
 - Notify matched students by Friday of this week.
 - Have them confirm their participation using a google form, such as [this one](https://docs.google.com/forms/d/1UBVASrhzVyA0c0sm9f0rrE90Xe6U0C51ZhLJstN2SWo/edit).
@@ -68,7 +68,7 @@ Applications close on Friday of this week. After the deadline:
 - Mark Week -6 on the calendar for the upcoming quarter.
 - Once students have confirmed, send them an email inviting them to register. You will need to send multiple emails telling students they will lose their spots when they fail to confirm / register.
 - Because we have consent request required you will need to admit each student to the clinic individually through the poorly made my.uchicago.edu interface. The instructor of record will receive emails with each consent request. 
-- Make sure that the Canvas page is set up. To do this use the code in the [clinic automation repository](https://github.com/dsi-clinic/clinic-automation). 
+- Make sure that the Canvas page is set up. To do this use the code in the [clinic automation repository](https://github.com/dsi-rse/clinic-automation). 
     - Add all TAs and Mentors to Canvas.
     - We only use a single canvas page (the one for Data 27100), make sure that all students are in that canvas page.
 - Add Org Report and Computer Set up Assignment to Canvas with correct dates and times.
@@ -91,7 +91,7 @@ Notes for next week:
 - Set up badge access for the clinic rooms by sending a list of registered student names, emails, and ChicagoID numbers to DSI operations.
 - Create when2meet links and put them in the project Slack channels
 - Notify the cluster groups that will need to complete step 6 of the computer setup (SSH/Cluster)
-- After org reports have been submitted, set up Canvas using these <!-- markdown-link-check-disable -->[instructions](https://github.com/dsi-clinic/clinic-automation)<!-- markdown-link-check-enable-->.
+- After org reports have been submitted, set up Canvas using these <!-- markdown-link-check-disable -->[instructions](https://github.com/dsi-rse/clinic-automation)<!-- markdown-link-check-enable-->.
 - Send an email connecting all mentors to the external partner introducing them. 
 
 Monday student message:

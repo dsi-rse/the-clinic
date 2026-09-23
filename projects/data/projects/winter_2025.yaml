@@ -8,7 +8,7 @@ projects:
   project_url: https://www.anl.gov/
   mentor: Bill Trok
   ta: Cassie Tang
-  github_link: https://github.com/dsi-clinic/2024-autumn-argonne
+  github_link: https://github.com/dsi-rse/clinic-2024-argonne
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Matthew Dearing
@@ -19,7 +19,7 @@ projects:
   project_url: https://buildingdecarb.org/
   mentor: Satadisha Saha Bhowmick
   ta: Harper Lyu
-  github_link: https://github.com/dsi-clinic/2024-autumn-building-decarbon
+  github_link: https://github.com/dsi-rse/clinic-2024-building-decarbon
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: André Meurer
@@ -31,7 +31,7 @@ projects:
   project_url: https://cmap.illinois.gov/
   mentor: Anna Woodard
   ta: Cassie Tang
-  github_link: https://github.com/dsi-clinic/CMAP
+  github_link: https://github.com/dsi-rse/clinic-2024-cmap
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Holly Hudson
@@ -42,7 +42,7 @@ projects:
   project_url: ''
   mentor: Liya Ding
   ta: Justin Wang
-  github_link: https://github.com/dsi-clinic/2024-autumn-cls
+  github_link: https://github.com/dsi-rse/clinic-2024-cls
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Center for Living Systems
@@ -53,7 +53,7 @@ projects:
   project_url: ''
   mentor: Francesco Pinto
   ta: Harper Schwab
-  github_link: https://github.com/dsi-clinic/2025-winter-data-and-democracy
+  github_link: https://github.com/dsi-rse/clinic-2025-data-and-democracy
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Internal DSI Project
@@ -64,7 +64,7 @@ projects:
   project_url: ''
   mentor: Jie Jian
   ta: Justin Wang
-  github_link: https://github.com/dsi-clinic/2024-autumn-nugraph
+  github_link: https://github.com/dsi-rse/clinic-2024-nugraph
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Giuseppe Cerati
@@ -75,7 +75,7 @@ projects:
   project_url: ''
   mentor: Owen Melina & Alexander Bogatskiy
   ta: Harper Lyu
-  github_link: https://github.com/dsi-clinic/2023-Autumn-Clinic-Fermi-CaloDiffusionPaper
+  github_link: https://github.com/dsi-rse/clinic-2023-fermi-calo-diffusion-paper
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Oz Amram & Kevin Pedro
@@ -86,7 +86,7 @@ projects:
   project_url: ''
   mentor: Meghan Hutch
   ta: Yukai Yang
-  github_link: https://github.com/dsi-clinic/2024-autumn-FS6
+  github_link: https://github.com/dsi-rse/clinic-2024-fs6
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Lauren Manning
@@ -97,7 +97,7 @@ projects:
   project_url: ''
   mentor: Jingchao Fang
   ta: Harper Schwab
-  github_link: https://github.com/dsi-clinic/2024-autumn-palmwatch-grievences
+  github_link: https://github.com/dsi-rse/clinic-2024-palmwatch-grievences
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: IDI
@@ -108,7 +108,7 @@ projects:
   project_url: ''
   mentor: Seyed Esmaeili & Susan Paykin
   ta: Yukai Yang
-  github_link: https://github.com/dsi-clinic/2024-autumn-IRC
+  github_link: https://github.com/dsi-rse/clinic-2024-irc
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Zachary Tausanovitch
@@ -119,7 +119,7 @@ projects:
   project_url: ''
   mentor: Jonatas Marques
   ta: Gayathri Jayaraman
-  github_link: https://github.com/dsi-clinic/2024-autumn-IEI
+  github_link: https://github.com/dsi-rse/clinic-2024-iei
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Alexis Schrubbe
@@ -130,7 +130,7 @@ projects:
   project_url: ''
   mentor: Julia Mendelsohn & Nick Ross
   ta: ''
-  github_link: https://github.com/dsi-clinic/2024-autumn-invenergy
+  github_link: https://github.com/dsi-rse/clinic-2024-invenergy
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: <ul><li>Sophie Logan</li><li>Zoë Kimpel</li><li>Axel De Mendoza</li><li>Daniel
@@ -144,7 +144,7 @@ projects:
   project_url: ''
   mentor: Tim Hannifan
   ta: Jack Sanderson
-  github_link: https://github.com/dsi-clinic/2025-winter-kids-first-chicago
+  github_link: https://github.com/dsi-rse/clinic-2025-kids-first-chicago
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Kids First Chicago
@@ -155,7 +155,7 @@ projects:
   project_url: ''
   mentor: Tim Hannifan & Patricia Chiril
   ta: Grace Shao
-  github_link: https://github.com/dsi-clinic/2024-autumn-morningstar
+  github_link: https://github.com/dsi-rse/clinic-2024-morningstar
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: <ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>
@@ -166,7 +166,7 @@ projects:
   project_url: ''
   mentor: Kelly Smalenberger
   ta: Jack Sanderson
-  github_link: https://github.com/dsi-clinic/2024-autumn-rafi-grocery
+  github_link: https://github.com/dsi-rse/clinic-2024-rafi-grocery
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: RAFI
@@ -177,7 +177,7 @@ projects:
   project_url: ''
   mentor: Kriti Sehgal
   ta: Polly Ren
-  github_link: https://github.com/dsi-clinic/2024-autumn-rafi-poultry
+  github_link: https://github.com/dsi-rse/clinic-2024-rafi-poultry
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: RAFI
@@ -188,7 +188,7 @@ projects:
   project_url: ''
   mentor: Susanna Lange
   ta: Grace Shao
-  github_link: https://github.com/dsi-clinic/2024-autumn-uchicago-library
+  github_link: https://github.com/dsi-rse/clinic-2024-uchicago-library
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: David Bottorff
@@ -199,7 +199,7 @@ projects:
   project_url: ''
   mentor: Nick Ross
   ta: Polly Ren
-  github_link: https://github.com/dsi-clinic/2025-winter-rwanda-climate
+  github_link: https://github.com/dsi-rse/clinic-2025-rwanda-climate
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: University of Rwanda
@@ -210,7 +210,7 @@ projects:
   project_url: ''
   mentor: Ganghua Wang
   ta: Gayathri Jayaraman
-  github_link: https://github.com/dsi-clinic/2025-winter-rwanda-landslides
+  github_link: https://github.com/dsi-rse/clinic-2025-rwanda-landslides
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: University of Rwanda

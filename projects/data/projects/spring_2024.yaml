@@ -13,7 +13,7 @@ projects:
   project_url: https://www.anl.gov/
   mentor: Bill Trok & YJ Choe
   ta: Victor Perez Martin
-  github_link: https://github.com/dsi-clinic/2023-clinic-Argonne
+  github_link: https://github.com/dsi-rse/2023-clinic-Argonne
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Matthew Dearing
@@ -24,7 +24,7 @@ projects:
   project_url: https://www.anl.gov/
   mentor: Isaac Mehlhaff
   ta: Yuxin Ji (Jessica)
-  github_link: https://github.com/dsi-clinic/2023-autumn-argonne-fermi
+  github_link: https://github.com/dsi-rse/DSI-clinic-argonne-fermi
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Matthew Dearing
@@ -35,7 +35,7 @@ projects:
   project_url: https://revealnews.org/
   mentor: Nick Ross
   ta: ''
-  github_link: https://github.com/dsi-clinic/2024-spring-cir
+  github_link: https://github.com/dsi-rse/2024-spring-cir
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Melissa Lewis
@@ -46,7 +46,7 @@ projects:
   project_url: ''
   mentor: Anna Woodard & Tim Hannifan
   ta: Victor Perez Martin
-  github_link: https://github.com/dsi-clinic/2024-winter-cmap
+  github_link: https://github.com/dsi-rse/clinic-2024-cmap
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Holly Hudson
@@ -57,7 +57,7 @@ projects:
   project_url: https://www.chicagotrading.com/
   mentor: David Uminsky & Patricia Chiril
   ta: Rishabh Shastry
-  github_link: https://github.com/dsi-clinic/2024-winter-ctc
+  github_link: https://github.com/dsi-rse/2024-winter-ctc
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: Natasha Pekelis
@@ -68,7 +68,7 @@ projects:
   project_url: ''
   mentor: Trevor Spreadbury
   ta: Sarah Walker
-  github_link: https://github.com/dsi-clinic/2024-winter-climate-cabinet-campaign-finance-tracker
+  github_link: https://github.com/dsi-rse/2024-winter-climate-cabinet-campaign-finance-tracker
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Caleb Braun
@@ -79,7 +79,7 @@ projects:
   project_url: https://computing.fnal.gov/kevin-pedro/
   mentor: Peter Lu
   ta: Fei Wang
-  github_link: https://github.com/dsi-clinic/2023-Autumn-Clinic-Fermi-CaloDiffusionPaper
+  github_link: https://github.com/dsi-rse/clinic-2023-fermi-calo-diffusion-paper
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Oz Amram & Kevin Pedro
@@ -101,7 +101,7 @@ projects:
   project_url: https://internetequity.uchicago.edu/
   mentor: Tim Hannifan & Jonatas Marques
   ta: Ridhi Purohit
-  github_link: https://github.com/dsi-clinic/2023-autumn-internet-equity
+  github_link: https://github.com/dsi-rse/2023-autumn-internet-equity
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Alexis Schrubbe
@@ -112,7 +112,7 @@ projects:
   project_url: https://invenergy.com/
   mentor: Vasileios Charisopoulos
   ta: Yiran Hao
-  github_link: https://github.com/dsi-clinic/2024-winter-invenergy
+  github_link: https://github.com/dsi-rse/2024-winter-invenergy
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: Zoe Kimpel
@@ -123,7 +123,7 @@ projects:
   project_url: https://www.morningstar.com/
   mentor: Satadisha Saha Bhowmick
   ta: Rishabh Shastry
-  github_link: https://github.com/dsi-clinic/2024-spring-morningstar
+  github_link: https://github.com/dsi-rse/2024-spring-morningstar
   is_private_repo: true
   has_one_pager: null
   external_mentor_info: <ul><li>Josh Charney</li><li>Jazmin Melchor</li></ul>
@@ -134,7 +134,7 @@ projects:
   project_url: https://www.perpetualuse.org/
   mentor: Launa Greer
   ta: Sarah Walker
-  github_link: https://github.com/dsi-clinic/2023-clinic-perpetual
+  github_link: https://github.com/dsi-rse/2023-clinic-perpetual
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Ellie Moss
@@ -145,7 +145,7 @@ projects:
   project_url: https://www.rafiusa.org
   mentor: Todd Nief
   ta: Rita Xu
-  github_link: https://github.com/dsi-clinic/2024-winter-rafi-poultry-cafos
+  github_link: https://github.com/dsi-rse/2024-winter-rafi-poultry-cafos
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Aaron Johnson

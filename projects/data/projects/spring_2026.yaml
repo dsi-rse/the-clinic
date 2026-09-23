@@ -7,7 +7,7 @@ projects:
   project_url: ''
   mentor: Justin Finkel
   ta: César Nuñez Huaman
-  github_link: https://github.com/dsi-clinic/monsoon-bench/
+  github_link: https://github.com/dsi-rse/clinic-2026-monsoon-bench/
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Adam Marchakitus
@@ -18,7 +18,7 @@ projects:
   project_url: ''
   mentor: Xiao Liu
   ta: Minjae Joh
-  github_link: https://github.com/dsi-clinic/2026-winter-accountability-counsel
+  github_link: https://github.com/dsi-rse/clinic-2026-accountability-counsel
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: ''
@@ -29,7 +29,7 @@ projects:
   project_url: ''
   mentor: Arna Woemmel
   ta: Jack Luo
-  github_link: https://github.com/dsi-clinic/2026-spring-bfi
+  github_link: https://github.com/dsi-rse/clinic-2026-bfi
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Eric Hernandez & Josh Gottlieb
@@ -40,7 +40,7 @@ projects:
   project_url: ''
   mentor: Min Jae Song
   ta: Pablo Hernandez Pedraza
-  github_link: https://github.com/dsi-clinic/2025-autumn-justice-advisory-council
+  github_link: https://github.com/dsi-rse/clinic-2025-justice-advisory-council
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Whitney Keytowey
@@ -51,7 +51,7 @@ projects:
   project_url: ''
   mentor: Satadisha Saha Bhowmick
   ta: César Nuñez Huaman
-  github_link: https://github.com/dsi-clinic/2025-autumn-dpic
+  github_link: https://github.com/dsi-rse/clinic-2025-dpic
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Dr. Urmila Chatterjee & Yashaswi Mohanty
@@ -62,7 +62,7 @@ projects:
   project_url: ''
   mentor: Teresa Flanagan
   ta: Yichen Ding
-  github_link: https://github.com/dsi-clinic/2026-winter-ecdysis
+  github_link: https://github.com/dsi-rse/clinic-2026-ecdysis
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: ''
@@ -73,7 +73,7 @@ projects:
   project_url: ''
   mentor: Lindsay House
   ta: Harleen Buttar
-  github_link: https://github.com/dsi-clinic/2026-spring-impact
+  github_link: https://github.com/dsi-rse/clinic-2026-impact
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Abby André & Jonathan Gilmour
@@ -84,7 +84,7 @@ projects:
   project_url: ''
   mentor: Anna Woodard & Jim Pivarski
   ta: Andres Camacho Baquero
-  github_link: https://github.com/dsi-clinic/vanguard
+  github_link: https://github.com/dsi-rse/clinic-2025-vanguard
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Dr. Gregory Karczmar & Dr. Milica Medved & Dr. Zhen Ren
@@ -95,7 +95,7 @@ projects:
   project_url: ''
   mentor: Bill Trok
   ta: Lam Tran
-  github_link: https://github.com/dsi-clinic/2026-winter-mwrd-chicago
+  github_link: https://github.com/dsi-rse/clinic-2026-mwrd-chicago
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Catherine O'Connor & Richard Fisher
@@ -106,7 +106,7 @@ projects:
   project_url: ''
   mentor: Varada Shevade
   ta: Harleen Buttar
-  github_link: https://github.com/dsi-clinic/2026-spring-palmwatch
+  github_link: https://github.com/dsi-rse/clinic-2026-palmwatch
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: ''
@@ -117,7 +117,7 @@ projects:
   project_url: ''
   mentor: Nick Ross & Liya Ding
   ta: Yichen Ding
-  github_link: https://github.com/dsi-clinic/2025-promega-mini-test
+  github_link: https://github.com/dsi-rse/clinic-2026-promega-mini-test
   is_private_repo: true
   has_one_pager: false
   external_mentor_info: Thomas Kirkland
@@ -128,7 +128,7 @@ projects:
   project_url: ''
   mentor: Bill Trok
   ta: Lam Tran
-  github_link: https://github.com/dsi-clinic/2026-spring-syllabus
+  github_link: https://github.com/dsi-rse/clinic-2026-syllabus
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Amanda Jungels
@@ -139,7 +139,7 @@ projects:
   project_url: ''
   mentor: Kelly Smalenberger
   ta: Jack Luo
-  github_link: https://github.com/dsi-clinic/2026-winter-uchicago-library
+  github_link: https://github.com/dsi-rse/clinic-2026-uchicago-library
   is_private_repo: true
   has_one_pager: false
   external_mentor_info: ''
@@ -150,7 +150,7 @@ projects:
   project_url: ''
   mentor: Varada Shevade
   ta: Minjae Joh
-  github_link: https://github.com/dsi-clinic/2026-spring-zero-foodprint
+  github_link: https://github.com/dsi-rse/clinic-2026-zero-foodprint
   is_private_repo: true
   has_one_pager: false
   external_mentor_info: ''

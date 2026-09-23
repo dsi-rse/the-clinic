@@ -10,7 +10,7 @@ projects:
   project_url: https://www.anl.gov/
   mentor: Bill Trok
   ta: Cassie Tang
-  github_link: https://github.com/dsi-clinic/2024-autumn-argonne
+  github_link: https://github.com/dsi-rse/clinic-2024-argonne
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Matthew Dearing
@@ -21,7 +21,7 @@ projects:
   project_url: ''
   mentor: Liya Ding
   ta: Justin Wang
-  github_link: https://github.com/dsi-clinic/2024-autumn-cls
+  github_link: https://github.com/dsi-rse/clinic-2024-cls
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Center for Living Systems
@@ -33,7 +33,7 @@ projects:
   project_url: https://cmap.illinois.gov/
   mentor: Anna Woodard
   ta: Cassie Tang
-  github_link: https://github.com/dsi-clinic/CMAP
+  github_link: https://github.com/dsi-rse/clinic-2024-cmap
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Holly Hudson
@@ -44,7 +44,7 @@ projects:
   project_url: ''
   mentor: Alexander Bogatskiy
   ta: Polly Ren
-  github_link: https://github.com/dsi-clinic/2025-spring-college-financial-health
+  github_link: https://github.com/dsi-rse/clinic-2025-college-financial-health
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Internal DSI Project
@@ -55,7 +55,7 @@ projects:
   project_url: ''
   mentor: Julia Mendelsohn
   ta: Harper Schwab
-  github_link: https://github.com/dsi-clinic/2025-winter-data-and-democracy
+  github_link: https://github.com/dsi-rse/clinic-2025-data-and-democracy
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Internal DSI Project
@@ -66,7 +66,7 @@ projects:
   project_url: ''
   mentor: Tim Hannifan
   ta: Harper Lyu
-  github_link: https://github.com/dsi-clinic/2025-spring-dsi-agents
+  github_link: https://github.com/dsi-rse/clinic-2025-dsi-agents
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Internal DSI Project
@@ -77,7 +77,7 @@ projects:
   project_url: ''
   mentor: Nick Ross
   ta: Justin Wang
-  github_link: https://github.com/dsi-clinic/2025-spring-dsi-hpc
+  github_link: https://github.com/dsi-rse/clinic-2025-dsi-hpc
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Internal DSI Project
@@ -88,7 +88,7 @@ projects:
   project_url: ''
   mentor: Meghan Hutch
   ta: Gayathri Jayaraman
-  github_link: https://github.com/dsi-clinic/2024-autumn-FS6
+  github_link: https://github.com/dsi-rse/clinic-2024-fs6
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Lauren Manning
@@ -99,7 +99,7 @@ projects:
   project_url: ''
   mentor: Jie Jian
   ta: Harper Lyu
-  github_link: https://github.com/dsi-clinic/2025-spring-groundwork-bridgeport
+  github_link: https://github.com/dsi-rse/clinic-2025-groundwork-bridgeport
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Internal DSI Project
@@ -110,7 +110,7 @@ projects:
   project_url: ''
   mentor: Jingchao Fang
   ta: Harper Schwab
-  github_link: https://github.com/dsi-clinic/2024-autumn-palmwatch-grievences
+  github_link: https://github.com/dsi-rse/clinic-2024-palmwatch-grievences
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Internal DSI Project
@@ -121,7 +121,7 @@ projects:
   project_url: ''
   mentor: Jonatas Marques
   ta: Gayathri Jayaraman
-  github_link: https://github.com/dsi-clinic/2024-autumn-IEI
+  github_link: https://github.com/dsi-rse/clinic-2024-iei
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: UChicago Internet Equity Initiative
@@ -132,7 +132,7 @@ projects:
   project_url: ''
   mentor: Tim Hannifan
   ta: Jack Sanderson
-  github_link: https://github.com/dsi-clinic/2025-winter-kids-first-chicago
+  github_link: https://github.com/dsi-rse/clinic-2025-kids-first-chicago
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Kids First Chicago
@@ -143,7 +143,7 @@ projects:
   project_url: ''
   mentor: Kriti Sehgal
   ta: Cissy Choy
-  github_link: https://github.com/dsi-clinic/2025-spring-pesticide-action-network
+  github_link: https://github.com/dsi-rse/clinic-2025-pesticide-action-network
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Internal DSI Project
@@ -154,7 +154,7 @@ projects:
   project_url: ''
   mentor: Kelly Smalenberger
   ta: Jack Sanderson
-  github_link: https://github.com/dsi-clinic/2024-autumn-rafi-grocery
+  github_link: https://github.com/dsi-rse/clinic-2024-rafi-grocery
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: RAFI
@@ -165,7 +165,7 @@ projects:
   project_url: ''
   mentor: Susanna Lange
   ta: Cissy Choy
-  github_link: https://github.com/dsi-clinic/2024-autumn-uchicago-library
+  github_link: https://github.com/dsi-rse/clinic-2024-uchicago-library
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: David Bottorff
@@ -176,7 +176,7 @@ projects:
   project_url: ''
   mentor: Nick Ross
   ta: Polly Ren
-  github_link: https://github.com/dsi-clinic/2025-spring-uchicago-transportation
+  github_link: https://github.com/dsi-rse/clinic-2025-spring-uchicago-transportation
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Beth Tindel

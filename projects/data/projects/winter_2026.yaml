@@ -7,7 +7,7 @@ projects:
   project_url: ''
   mentor: Justin Finkel
   ta: Alex Fan
-  github_link: https://github.com/dsi-clinic/monsoon-bench/
+  github_link: https://github.com/dsi-rse/clinic-2026-monsoon-bench/
   is_private_repo: false
   has_one_pager: true
   external_mentor_info: Adam Marchakitus
@@ -18,7 +18,7 @@ projects:
   project_url: ''
   mentor: Xiao Liu
   ta: Minjae Joh
-  github_link: https://github.com/dsi-clinic/2026-winter-accountability-counsel
+  github_link: https://github.com/dsi-rse/clinic-2026-accountability-counsel
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: ''
@@ -29,7 +29,7 @@ projects:
   project_url: ''
   mentor: Nick Ross
   ta: César Nuñez Huaman
-  github_link: https://github.com/dsi-clinic/2025-autumn-apollocare
+  github_link: https://github.com/dsi-rse/clinic-2025-apollocare
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Austin Nafziger
@@ -41,7 +41,7 @@ projects:
   project_url: https://www.anl.gov/
   mentor: Tim Hannifan
   ta: Minjae Joh
-  github_link: https://github.com/dsi-clinic/2025-autumn-argonne
+  github_link: https://github.com/dsi-rse/clinic-2025-argonne
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Matthew Dearing
@@ -52,7 +52,7 @@ projects:
   project_url: ''
   mentor: Arna Woemmel
   ta: Jack Luo
-  github_link: https://github.com/dsi-clinic/2025-autumn-bfi
+  github_link: https://github.com/dsi-rse/clinic-2025-bfi
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: <ul><li>Eric Hernandez</li><li>Josh Gottlieb</li></ul>
@@ -63,7 +63,7 @@ projects:
   project_url: ''
   mentor: Jeffrey Zhang
   ta: Harleen Buttar
-  github_link: https://github.com/dsi-clinic/2025-autumn-blackhawks
+  github_link: https://github.com/dsi-rse/clinic-2025-blackhawks
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Paulino Diaz
@@ -74,7 +74,7 @@ projects:
   project_url: ''
   mentor: David Jacobson
   ta: Yichen Ding
-  github_link: https://github.com/dsi-clinic/2025-autumn-city-of-chicago-energy
+  github_link: https://github.com/dsi-rse/clinic-2025-city-of-chicago-energy
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Candice Stauffer
@@ -85,7 +85,7 @@ projects:
   project_url: ''
   mentor: Tim Hannifan
   ta: Andres Camacho Baquero
-  github_link: https://github.com/dsi-clinic/2025-autumn-city-of-chicago-housing
+  github_link: https://github.com/dsi-rse/clinic-2025-city-of-chicago-housing
   is_private_repo: true
   has_one_pager: false
   external_mentor_info: Candice Stauffer
@@ -96,7 +96,7 @@ projects:
   project_url: ''
   mentor: Min Jae Song
   ta: Justin Wang
-  github_link: https://github.com/dsi-clinic/2025-autumn-justice-advisory-council
+  github_link: https://github.com/dsi-rse/clinic-2025-justice-advisory-council
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Whitney Keytowey
@@ -107,7 +107,7 @@ projects:
   project_url: ''
   mentor: Satadisha Saha Bhowmick
   ta: César Nuñez Huaman
-  github_link: https://github.com/dsi-clinic/2025-autumn-dpic
+  github_link: https://github.com/dsi-rse/clinic-2025-dpic
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: <ul><li>Dr. Urmila Chatterjee</li><li>Yashaswi Mohanty</li></ul>
@@ -118,7 +118,7 @@ projects:
   project_url: ''
   mentor: Teresa Flanagan
   ta: Yichen Ding
-  github_link: https://github.com/dsi-clinic/2026-winter-ecdysis
+  github_link: https://github.com/dsi-rse/clinic-2026-ecdysis
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: ''
@@ -140,7 +140,7 @@ projects:
   project_url: ''
   mentor: Lindsay House
   ta: Harleen Buttar
-  github_link: https://github.com/dsi-clinic/2025-autumn-impact
+  github_link: https://github.com/dsi-rse/clinic-2025-impact
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: <ul><li>Abby André</li><li>Jonathan Gilmour</li></ul>
@@ -151,7 +151,7 @@ projects:
   project_url: ''
   mentor: Meghan Hutch
   ta: Pablo Hernandez Pedraza
-  github_link: https://github.com/dsi-clinic/2025-autumn-invenergy
+  github_link: https://github.com/dsi-rse/clinic-2025-invenergy
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Sophie Logan
@@ -162,7 +162,7 @@ projects:
   project_url: ''
   mentor: Anna Woodard & Jim Pivarski
   ta: Alex Fan
-  github_link: https://github.com/dsi-clinic/vanguard
+  github_link: https://github.com/dsi-rse/clinic-2025-vanguard
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: <ul><li>Dr. Gregory Karczmar</li><li>Dr. Milica Medved</li><li>Dr. Zhen Ren</li></ul>
@@ -173,7 +173,7 @@ projects:
   project_url: ''
   mentor: Kriti Sehgal
   ta: Lam Tran
-  github_link: https://github.com/dsi-clinic/2026-winter-mwrd-chicago
+  github_link: https://github.com/dsi-rse/clinic-2026-mwrd-chicago
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: <ul><li>Catherine O'Connor</li><li>Richard Fisher</li></ul>
@@ -184,7 +184,7 @@ projects:
   project_url: ''
   mentor: Kelly Smalenberger
   ta: Pablo Hernandez Pedraza
-  github_link: https://github.com/dsi-clinic/2025-autumn-mothers-out-front
+  github_link: https://github.com/dsi-rse/clinic-2025-mothers-out-front
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Camille Greer
@@ -195,7 +195,7 @@ projects:
   project_url: ''
   mentor: Liya Ding & Nick Ross
   ta: Andres Camacho Baquero
-  github_link: https://github.com/dsi-clinic/2025-autumn-promega
+  github_link: https://github.com/dsi-rse/clinic-2025-promega
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Thomas Kirkland
@@ -206,7 +206,7 @@ projects:
   project_url: ''
   mentor: Connor Scully-Allison
   ta: Jack Luo
-  github_link: https://github.com/dsi-clinic/2026-winter-uchicago-library
+  github_link: https://github.com/dsi-rse/clinic-2026-uchicago-library
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: David Bottorff
@@ -217,7 +217,7 @@ projects:
   project_url: ''
   mentor: Jennifer Blanc
   ta: Lam Tran
-  github_link: https://github.com/dsi-clinic/2025-autumn-uchicago-transportation
+  github_link: https://github.com/dsi-rse/clinic-2025-uchicago-transportation
   is_private_repo: true
   has_one_pager: true
   external_mentor_info: Beth Tindel
