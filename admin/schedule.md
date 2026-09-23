@@ -101,7 +101,7 @@ Monday student message:
 - You should all have received an invite to the github repo. Please accept this invitation.
 - You should also have received an invitation to Canvas. Make sure you can access the page.
 - The org report is due Friday at 5pm. This needs to be submitted via Canvas. Note that you will need to collect the information from the org report Friday at 5pm and make sure all Monday sessions have rooms. You can ignore assigning the rooms for groups which do not have monday meetings till the following week.
-- All information, syllabus, grading rubrics, etc. can be found here: https://github.com/dsi-clinic/the-clinic
+- All information, syllabus, grading rubrics, etc. can be found here: https://github.com/dsi-rse/the-clinic
 ```
 
 Monday TA/Mentor message:
@@ -117,7 +117,7 @@ Wednesday student message:
 ```
 @here Tomorrow we will be checking installation of needed software for the clinic. If you are returning to the clinic from last quarter you do not have to attend. The link below has necessary set up information. Please come with the steps 1-6 and 8 from the doc completed. This project [WILL/WILL NOT] be using the cluster.
 
-We will be doing checks during tomorrow's session. The way the check works is you show us your computer and do the verification step listed for each in the document. Note that your mentor may change the required software depending on the project. https://github.com/dsi-clinic/the-clinic/blob/main/tutorials/clinic-computer-setup.md
+We will be doing checks during tomorrow's session. The way the check works is you show us your computer and do the verification step listed for each in the document. Note that your mentor may change the required software depending on the project. https://github.com/dsi-rse/the-clinic/blob/main/tutorials/clinic-computer-setup.md
 ```
 
 ### Week 2
@@ -145,7 +145,7 @@ Mentors-TA Slack Message:
 - Students are required to submit their planning document this week after meeting with you.
 - Please make sure to follow the best practices outlined in in the "How to run a mentor meeting" and "Mentor Expectations" docs linked below.
 - There is quite a bit of documentation in the TA and Mentor Section of the GitHub repo. If you have any questions, please let us know.
-https://github.com/dsi-clinic/the-clinic/blob/main/mentor-ta/index.md
+https://github.com/dsi-rse/the-clinic/blob/main/mentor-ta/index.md
 
 ```
 
@@ -166,7 +166,7 @@ https://github.com/dsi-clinic/the-clinic/blob/main/mentor-ta/index.md
 - Monday message to all groups doing the mid quarter presentation
 
 ```
-@here Quick reminder that next week is the mid quarter presentations! The date of your presentation can be found on canvas. A template, grading rubric and more information can be found on our github. Please read the rubric. https://github.com/dsi-clinic/the-clinic
+@here Quick reminder that next week is the mid quarter presentations! The date of your presentation can be found on canvas. A template, grading rubric and more information can be found on our github. Please read the rubric. https://github.com/dsi-rse/the-clinic
 ```
 
 - Also notify the TA and Mentor Channel:
@@ -194,8 +194,8 @@ Wednesday message:
 All – Part of the grade of the clinic is a technical assessment of your code. You can find more information in the links below, including a grading rubric. If you want to receive full credit your code needs to follow the conventions outlined in the rubric.
 
 As you head into the last few weeks of the quarter, please make sure that you add time to apply the changes expected.
-Grading Rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
-Coding standards documentation: https://github.com/dsi-clinic/the-clinic/blob/main/coding-standards/coding-standards.md
+Grading Rubric: https://github.com/dsi-rse/the-clinic/blob/main/rubrics/final-technical-cleanup.md
+Coding standards documentation: https://github.com/dsi-rse/the-clinic/blob/main/coding-standards/coding-standards.md
 ```
 
 ### Week 8
@@ -227,7 +227,7 @@ After the application opens:
 ```
 @here The application for Winter 2025 is now open. If you are enrolled in DATA 271 and will be taking DATA 272 next quarter, you must reapply to get into our matching system. The deadline for submission is Dec 1 at 11:59pm. 
 
-Apply here: https://dsi-clinic.github.io/the-clinic/#application-information
+Apply here: https://clinic.ds.uchicago.edu/#application-information
 ```
 
 Mentor/TA message:
@@ -237,9 +237,9 @@ Mentors: Provide written feedback on student drafts within 24 hours of submissio
 1. Dec 3rd @1pm (video draft 1)
 2. 5/23 at 1pm (video draft 2 and one-pager)
 
-Video rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-video.md
-One-pager rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/one-pager.md
-Technical rubric: https://github.com/dsi-clinic/the-clinic/blob/main/rubrics/final-technical-cleanup.md
+Video rubric: https://github.com/dsi-rse/the-clinic/blob/main/rubrics/final-video.md
+One-pager rubric: https://github.com/dsi-rse/the-clinic/blob/main/rubrics/one-pager.md
+Technical rubric: https://github.com/dsi-rse/the-clinic/blob/main/rubrics/final-technical-cleanup.md
 ```
 
 ### Week 9
