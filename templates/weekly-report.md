@@ -40,18 +40,11 @@ Getting stuck is normal. Getting stuck and not telling anyone until the mentor s
 ```markdown
 ## Weekly Report — Week <n>
 
-**Pull request(s):** #<pr-number>
-
-| Acceptance criteria | Status | Notes |
-| --- | --- | --- |
-| <criteria 1> | `complete` | Merged in #<pr-number>. |
-| <criteria 2> | `pending review` | PR #<pr-number> opened Tuesday, awaiting TA review. |
-| <criteria 3> | `in progress` | Ran into <problem>; raised with TA on Wednesday. Roughly half done. |
-
-**Hours worked this week:** <n>
-
-**Anything blocking me:**
-<One or two sentences, or "nothing".>
+- <criteria 1>: `complete` — Merged in #<pr-number>.
+- <criteria 2>: `pending review` — PR #<pr-number> awaiting TA review.
+- <criteria 3>: `in progress` — Ran into <problem>; raised with TA on Wednesday.
+- Hours worked: <n>
+- Blockers: <one sentence, or "none">
 ```
 
 ## Grading
