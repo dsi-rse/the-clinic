@@ -37,9 +37,15 @@ There are three required meeting times each week:
 
 It is expected that graduate students will work a minimum of 15 hours each week in this course and 12 hours for undergraduates. The course leadership team will be a primary support for each project and each student team is expected to maximize our team meetings together. In addition, given the unstructured nature of real-world data science, each student will be expected to demonstrate independence and diligence in finding appropriate resources and tools that address the unfolding data science challenges of the project.  
 
+The weekly cycle runs from one mentor session to the next and is tracked entirely in GitHub. After each mentor session students open GitHub issues describing their tasks for the coming week with clear acceptance criteria, and post links to those issues in their project's Slack thread. Before the next mentor session students push their work to a pull request and post their progress as a comment on each issue. A full description of what each student owes each week is [here](../students/index.md#your-weekly-responsibilities).
+
+Students may write code locally or in devcontainers, but final submissions must work in Docker and must be reproducible on a fresh clone of the repository.
+
 ### On Communication
 
-We will have multiple means of communication for this course: Github, Canvas, Slack and Email. Email will be used sparingly for communication and periodically for updates regarding grades as well as communication with external mentors. Each team will have their own individual project channel on Slack where we expect the vast majority of communication for this project to be done. Progress on the project and technical updates will be communicated through Github and Canvas.
+We will have multiple means of communication for this course: Github, Canvas, Slack and Email. Email will be used sparingly for communication and periodically for updates regarding grades as well as communication with external mentors. Each team will have their own individual project channel on Slack where we expect the vast majority of communication for this project to be done, including a weekly thread where students post links to their GitHub issues and issue comments.
+
+**Progress on the project is communicated through GitHub.** Weekly tasks are GitHub issues and weekly reports are comments on those issues. Canvas is used for grades and for the deliverables that are not code (the org report, mid-quarter presentation, peer reviews, and final deliverables).
 
 ### On Grading
 
@@ -48,10 +54,14 @@ The Data Science Clinic cannot be taken as a pass/fail course. All students enro
 * __10% Peer Evaluation__ - [Google Form via Canvas] We will solicit feedback from the student teams over the course of the project. Students will be required to evaluate the contributions of all team members to the project.
 * __2% Initial Computer Set-up__
 * __3% Initial Org Report__
-* __20% Weekly Reports/Work Product__ –  [Project Mentors & TAs]  Each week there are weekly reports which are due. Project mentors will score these reports on a scale of 0-5. The weekly reports are measures of a students effort and output for that particular week and may include the following dimensions:
-    * __Code Review__: When code is pushed to github, what is the quality of that code? Staff will provide feedback on code quality and progress.
+* __20% Weekly Reports/Work Product__ –  [Project Mentors & TAs]  Each week each student receives two scores on a scale of 0-5 from their project mentor: one for the GitHub issues they opened for their tasks ([weekly tasks rubric](../rubrics/weekly-tasks-rubric.md)), and one for the work they pushed and the weekly report they posted as a comment on those issues ([weekly report rubric](../rubrics/weekly-report-rubric.md)). These scores are a measure of a student's effort and output for that particular week and may include the following dimensions:
+    * __Task Definition__: Were issues opened on time with clear, checkable acceptance criteria, and were the links posted to the Slack thread?
+    * __Code Review__: When code is pushed to github, what is the quality of that code? Did the student respond to the TA's review comments? Staff will provide feedback on code quality and progress.
+    * __Reporting Accuracy__: Does the reported status of each piece of acceptance criteria match what is actually on GitHub? When work is incomplete, is there an honest explanation, and were blockers raised during the week rather than at the mentor session?
     * __Presentations__: If students are required to make a presentation, what is the quality? Are there grammar, spelling or formatting issues? How much clean-up work does the mentor need to be before the presentation is released? When communicating verbally are students talking at a good speed and loud enough for people to hear?
     * __Write-ups/Documentation__: Are required documents well-written? Are they well-formatted and have limited errors? Do they communicate their intentions to the specific audience?
+
+    Note that a task requiring code with no code pushed to GitHub receives a 0 for that week.
 * __10% Professionalism__ - [Project Mentors & TAs] Clinic leadership will evaluate each individual student’s demonstrated professionalism. This evaluation is drawn primarily from student written and verbal communication, student meeting the expectations set forth for the course, including 15 hours a week of work, general participation, attendance, engagement with clients and other professional behavior exhibited by each student. There are two specific areas of professionalism that I want to call out which will be graded:
     * __Client Communication__: During client communication are students prepared, ready and able? Are they asking good questions? Is the client sitting there in silence while people stare down? 
     * __Attendance__: You will be expected to attend and be on time for all meetings, unless prior arrangements have been made. If you show up late, points will be deducted from your grade.

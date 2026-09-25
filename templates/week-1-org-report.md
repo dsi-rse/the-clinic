@@ -7,7 +7,7 @@ To receive full credit for this week’s report, please fill out the following i
 
 Note that this report can be filled out either in Markdown or using the Microsoft word template [in this same directory](./week-1-org-report.docx).
 
-Note that if there are any issues filling this out with unresponsive group mates, TA, or mentor, please DM Nick Ross. 
+Note that if there are any issues filling this out with unresponsive group mates, TA, or mentor, please DM the clinic director or associate director. 
 
 | | | 
 | --- | --- | 
@@ -16,8 +16,8 @@ Note that if there are any issues filling this out with unresponsive group mates
 | | [Name #2] | 
 | | [Name #3]
 | | [Name #4]
-| Name of Teaching Assistant (if applicable): | |
-| Name of your Faculty Mentor: | | 
+| Name of Teaching Assistant: | |
+| Name of your Internal Mentor: | | 
 
 
 ### Meeting Times

@@ -65,6 +65,13 @@ For each of the items below, please fill in the checkmark [X] if it is satisfied
 - [ ] Environment information (usually `make`, `docker` or `conda`) is specified.
 - [ ] All boilerplate language has been removed or updated. 
 
+#### Reproducibility on a Fresh Clone
+- [ ] The code runs in Docker. (Students may develop locally or in a devcontainer, but the final submission must work in Docker.)
+- [ ] Following only the setup steps documented in the repo, the code can be run from a fresh clone.
+    - [ ] If there are notebooks: setup steps work and "Run All" reproduces the results.
+    - [ ] If there is a pipeline: setup steps work and `make run-pipeline` (or the documented equivalent) reproduces the results.
+- [ ] Any step that cannot be automated (for example, a manual data download behind a login) is documented explicitly as a prerequisite.
+
 #### Code grading
 Please identify three random files edited by students during the last quarter (making sure to include at least _one_ or _two_ notebooks if there are notebooks in the repo) and evaluate those files for the following. Please specify which three files you choose in the form above.
 

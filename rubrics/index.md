@@ -2,13 +2,13 @@
 
 This page contains all grading rubrics used in the Data Science Clinic. These rubrics help ensure consistent evaluation across projects and provide clear expectations for deliverables.
 
-## Planning and Progress Rubrics
+## Weekly Rubrics
 
-### [Planning Document Rubric](./planning-doc-rubric.md)
-Used to evaluate the initial project planning document that teams create at the beginning of their project. Covers project scope, methodology, timeline, and team roles.
+### [Weekly Tasks Rubric](./weekly-tasks-rubric.md)
+Used to evaluate the GitHub issues each student opens after the mentor session describing their tasks for the coming week. Covers task descriptions, acceptance criteria, and timeliness. Students are graded against the [weekly tasks template](../templates/weekly-tasks.md).
 
-### [Progress Document Rubric](./progress-doc-rubric.md)
-Used to evaluate quarterly progress reports that teams submit throughout the project. Assesses progress made, challenges encountered, and next steps.
+### [Weekly Report Rubric](./weekly-report-rubric.md)
+Used to evaluate the weekly report each student posts as a comment on last week's issues, along with the code they pushed to GitHub. Assesses progress made, accuracy of reported statuses, and how blockers were handled. Students are graded against the [weekly report template](../templates/weekly-report.md).
 
 ## Presentation Rubrics
 

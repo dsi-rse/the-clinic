@@ -10,8 +10,11 @@ Duties include:
 
 * Leading bi-weekly in-person working sessions
 * Answering questions via Slack and e-mail
-* Reviewing code
-* Taking attendance 
+* Reviewing code, including running the clinic's Claude-based pull request review skill on student pull requests
+* Making sure students are pushing to GitHub, opening pull requests, and opening issues
+* Unblocking students on setup and technical problems, and escalating what you cannot solve
+* Posting a weekly written update on each project to the clinic TAs Slack channel
+* Taking attendance
 * Assisting in additional grading 
 
 TAs are assigned to two projects each quarter. On each project, the TA will be required to run two weekly in-person work sessions and attend one weekly mentor meeting. At each work session, the TA will be required to take attendance and answer any additional questions the students have. All meetings are scheduled during the first week of class in accordance with the team's schedule and are held on the Hyde Park campus of the University of Chicago.

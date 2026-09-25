@@ -9,6 +9,17 @@ The purpose of this document is to centralize resources and create a timeline of
 ## Resources
 - [Application admin link](https://docs.google.com/forms/d/1OAgTju72wNeLYeNbp3xsqxgAGqARuYvTwdYcFrTALus/edit) Best Practice: re-use this form, clearing out the historical responses and changing the date and project names.
 
+## Recurring Weekly Tasks (Weeks 2-10)
+
+- Verify the Slack bot is posting the weekly thread in each project channel where students paste their GitHub issue and issue-comment links. If a channel is missing its thread, students cannot submit.
+- Run `/clinic-review` across the project repositories. It scans for:
+    - students with no commits pushed
+    - students with no issues opened
+    - issues without clear acceptance criteria
+    - projects that look like they are stalling
+- Follow up on anything `/clinic-review` surfaces. See the [escalation doc](../mentor-ta/escalation.md).
+- Check the clinic TAs Slack channel for the weekly per-project TA updates. 
+
 ## Weekly Calendar
 
 ### Week -6
@@ -74,7 +85,10 @@ Applications close on Friday of this week. After the deadline:
 - Add Org Report and Computer Set up Assignment to Canvas with correct dates and times.
 The following tasks depend upon having a list of confirmed students and projects:
 - Create Slack channels. Add students, mentors, and TAs to private channels and invite users as single channel guests. We pay a membership fee per head for regular users and that is not necessary for these students
-- Create GitHub repositories. Add students, mentors, and TAs
+- Add the clinic Slack bot to each project channel so it posts the weekly thread where students paste their GitHub links.
+- Create GitHub repositories. Use [the clinic template](https://github.com/dsi-rse/clinic-template) where relevant.
+- Protect `main` on the repositories before granting students access.
+- Add students, mentors, and TAs to the GitHub repositories. 
 - Send the DSI cluster admin a list of CNET user IDs and associated projects to grant them access to the cluster.
 - Slack message for Mentors & TAs:
 ```
@@ -115,7 +129,7 @@ Monday TA/Mentor message:
 
 Wednesday student message:
 ```
-@here Tomorrow we will be checking installation of needed software for the clinic. If you are returning to the clinic from last quarter you do not have to attend. The link below has necessary set up information. Please come with the steps 1-6 and 8 from the doc completed. This project [WILL/WILL NOT] be using the cluster.
+@here Tomorrow we will be checking installation of needed software for the clinic. If you are returning to the clinic from last quarter you do not have to attend. The link below has necessary set up information. Please come with steps 1-6, 8, 9 and 10 from the doc completed. This project [WILL/WILL NOT] be using the cluster.
 
 We will be doing checks during tomorrow's session. The way the check works is you show us your computer and do the verification step listed for each in the document. Note that your mentor may change the required software depending on the project. https://github.com/dsi-rse/the-clinic/blob/main/tutorials/clinic-computer-setup.md
 ```
@@ -142,7 +156,8 @@ Mentors-TA Slack Message:
 - Rooms have been assigned for TA and mentor sessions.
 - All assignments have been created in Canvas with relevant due dates.
 - You should be in contact (and hopefully meeting) with your external mentor this week.
-- Students are required to submit their planning document this week after meeting with you.
+- After meeting with you, students are required to open GitHub issues for their tasks with clear acceptance criteria and post the links to the project Slack thread. Please make sure the acceptance criteria are actually checkable.
+- Mentors: run `/clinic-project-review` on your project repo before each meeting. TAs: run `/clinic-pr-review` on student pull requests.
 - Please make sure to follow the best practices outlined in in the "How to run a mentor meeting" and "Mentor Expectations" docs linked below.
 - There is quite a bit of documentation in the TA and Mentor Section of the GitHub repo. If you have any questions, please let us know.
 https://github.com/dsi-rse/the-clinic/blob/main/mentor-ta/index.md

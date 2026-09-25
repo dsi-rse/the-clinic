@@ -81,7 +81,18 @@ If the code runs locally (the most common situation), this means:
     * The Dockerfile should use a `pyproject.toml` to manage modules and should have versions on all modules.
     * There should be _no_ conda / pyenv etc.
 
+You may write code locally or in a devcontainer, but **your final submission must work in Docker.** Verify this before you submit rather than assuming it.
+
 If the code is supposed to run on the cluster, this means that there needs to be a well-specified conda or micromamba recipe to manage the environment. 
+
+### Reproducibility on a Fresh Clone
+
+Every code path in the repo must be documented somewhere and reproducible by someone who has just cloned the repository. The test is literal: a person with no context clones the repo, follows the documented setup, and gets your results.
+
+* **Notebooks:** after following the documented setup and installation steps, a new cloner should be able to hit "Run All" on the notebook and reproduce your results.
+* **Pipelines:** after following the documented setup and installation steps, a new cloner should be able to run `make run-pipeline` (or whatever the documented equivalent is) and reproduce your results.
+
+If a step cannot be automated — for example, a manual data download behind a login — document it explicitly as a prerequisite rather than leaving it implied.
 
 
 FAQ
