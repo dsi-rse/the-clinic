@@ -32,10 +32,10 @@ The following documents outline the core responsibilities of each position.
 
 Student work lives in GitHub. Each week:
 
-* Students open issues for their tasks with clear acceptance criteria, push code to pull requests, and post their progress as comments on those issues.
+* Each student opens an issue for their tasks with clear acceptance criteria, push code to pull requests, and post their progress as comments on those issues.
 * **TAs** run `/clinic-pr-review` on open pull requests, make sure students are pushing and opening issues, unblock technical problems, and post a weekly update per project to the thread in the clinic TAs Slack channel.
 * **Mentors** run `/clinic-project-review` before each meeting, run the meeting, and assign next week's tasks with clear acceptance criteria.
-* **Clinic administration** runs `/clinic-review` across all projects to catch students with no commits, students with no issues, issues without clear acceptance criteria, and projects that look like they are stalling.
+* **Clinic administration** runs `/clinic-review` across all projects to identify students with no commits, students with no issues, issues without clear acceptance criteria, and projects that look like they are stalling.
 
 The formats and grading are in the [weekly tasks template](../templates/weekly-tasks.md), the [weekly report template](../templates/weekly-report.md), the [weekly tasks rubric](../rubrics/weekly-tasks-rubric.md), and the [weekly report rubric](../rubrics/weekly-report-rubric.md).
 

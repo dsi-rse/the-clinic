@@ -4,7 +4,7 @@ title: "Mentor Expectations"
 
 ## Mentor Expectations
 
-This document contains a rough outline of the expectations for the mentor. At the highest level there are six core responsibilities:
+This document contains a rough outline of the expectations for the mentor. At the highest level there are five core responsibilities:
 
 1. **Project Leadership and Management**
     * General project oversight
