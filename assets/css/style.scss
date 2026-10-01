@@ -56,3 +56,28 @@ h6:hover .anchor-link {
     overflow-x: hidden;
   }
 }
+
+/* Both tutorial choices use the same radio-button styling. */
+.tutorial-choice {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.tutorial-choice legend {
+  font-weight: bold;
+}
+
+.tutorial-choice label {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+@media print {
+  .tutorial-choice {
+    display: none;
+  }
+}

@@ -1,177 +1,240 @@
 ---
 title: "Computer Setup for Data Science Clinic"
+tutorial_choices: true
 ---
 
-# Computer set up for Data Science Clinic
+# Computer setup for Data Science Clinic
 
-## Intro
+Complete this checklist in **week one**. Ask your TA about anything that fails; incomplete setup can affect your grade. Clinic staff support the tools listed here.
 
-This document contains information on how to prepare you computer for the data science clinic. Note that if you do not have these set up properly your grade may be penalized.
+Choose your **operating system** and **where you will work** to reveal your checklist. Ask your mentor if you are unsure whether your project uses the cluster. You can change either selection below.
 
-**This is the required technical onboarding for the first week of the quarter.** Work through it during week one and escalate anything that does not work to your TA — do not let a broken setup carry into week two. You cannot push code if your environment does not work, and a week with no pushed code is a 0.
+{% include tutorial-choices.html %}
 
-Importantly there may be alternatives to the software listed below that has similar functionality. In the case of you using an alternative you will not receive support from the clinic staff/TAs/etc. We _strongly_ recommend you use the options below.
+<div data-platform-guide hidden markdown="1">
 
-## 1. Unix Command Line Terminal
+<ol data-tutorial-contents aria-label="Tutorial steps"></ol>
 
-You need to have access to a command line terminal for many of the tools that are used. If you have a Mac you can find the command line / terminal using the `terminal` application. 
+<h2 id="1-install-local-tools">1. Set up your computer</h2>
 
-On Windows machines you will need to install _Windows Subsystem for Linux_ ("WSL") and Ubuntu. To do this, follow the instructions [here](https://learn.microsoft.com/en-us/windows/wsl/install). **Importantly** windows has a terminal called PowerShell which _is not_ the same as a unix terminal. If you aren't sure which one you are running, the windows version's prompt will generally looks something like `C:\`.
+Install [Visual Studio Code](https://code.visualstudio.com/download), then follow your platform's steps.
 
-**Verification:** Make sure that you can open your terminal app and type in the following without getting an error:
+<div id="setup-tools-mac" data-platform="mac" hidden markdown="1">
+
+Use your **Terminal** app for commands on your own computer.
+
+On **Mac**, open VS Code's command palette and run **Shell Command: Install 'code' command in PATH**, then restart Terminal. On **Linux**, follow [VS Code's installation instructions](https://code.visualstudio.com/docs/setup/linux) for your distribution. Check that `code --version` works.
+
+<div data-work-location="local" hidden markdown="1">
+
+- **Mac:** Try `git --version` and `make --version`. If either is missing, run `xcode-select --install` to install Apple's command-line tools. Install [Docker Desktop for Mac](https://docs.docker.com/desktop/setup/install/mac-install/) and start it.
+- **Linux:** Install [Git](https://git-scm.com/downloads/linux) and Make using your distribution's package manager. Follow [Docker's Linux installation guide](https://docs.docker.com/engine/install/) for your distribution, including its post-installation steps.
+
+</div>
+
+</div>
+
+<div id="setup-tools-windows" data-platform="windows" hidden markdown="1">
+
+<div data-work-location="cluster" hidden markdown="1">
+
+Use **PowerShell** for commands on your own computer. Check that `code --version` works. The SSH guide in step 2 covers installing SSH.
+
+</div>
+
+<div data-work-location="local" hidden markdown="1">
+
+Use **PowerShell** to install Windows tools and **Ubuntu (WSL)** for project commands. These are different shells.
+
+1. [Install WSL and Ubuntu](https://learn.microsoft.com/en-us/windows/wsl/install). In **PowerShell as administrator**, run:
+
+       wsl --install
+
+   Restart when prompted. Open **Ubuntu** from the Start menu and create a Linux username and password.
+
+2. In **PowerShell**, check:
+
+       wsl --list --verbose
+
+   Ubuntu should be listed with version `2`.
+
+3. In **Ubuntu**, check:
+
+       whoami
+       pwd
+
+   You should see your Linux username (not `root`) and a path such as `/home/YOUR_LINUX_USERNAME`. If this fails, see [WSL troubleshooting](./troubleshooting.md#troubleshooting-wsl).
+
+4. Install Git and Make in **Ubuntu**:
+
+       sudo apt-get update
+       sudo apt-get install git build-essential
+
+5. Install [Docker Desktop for Windows](https://docs.docker.com/desktop/setup/install/windows-install/), start it, and enable Ubuntu under **Settings → Resources → WSL Integration**. See [Docker's WSL guide](https://docs.docker.com/desktop/features/wsl/).
+
+6. In VS Code, install the **WSL** extension. Keep project repositories in Ubuntu's home directory, rather than under `/mnt/c`.
+
+</div>
+
+</div>
+
+<div data-work-location="local" hidden markdown="1">
+
+**Check:** In Mac/Linux Terminal or Ubuntu, run:
 
     /bin/bash --version
-
-**Additional Windows Verification:** Make sure that you can complete the above _and_ open PowerShell in your terminal app and run:
-
-    wsl printf 'Default shell: $0\nUsername: $USER\nHome Directory: $(cd ~ && pwd)'
-
-This should generate a return of:
-
-    Default shell: /bin/bash
-    Username: YOUR_WSL_USERNAME
-    Home Directory: /home/YOUR_WSL_USERNAME
-
-Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>should not be `root`</b> If one of these is incorrect, please go to [troubleshooting instructions](./troubleshooting.md#troubleshooting-wsl)
-
-Additionally, open File Explorer, scroll to the bottom left, select 'Linux', 'Ubuntu', 'home', then right click on your username and select 'Pin to Quick Access'. Now your ubuntu home directory should appear in the top/middle left of file explorer.
-
-
-## 2. Visual Studio Code
-
-Our default IDE is Visual Studio Code. For both PC and Macs you need to follow the link [here](https://code.visualstudio.com/download). 
-
-**Verification:** Make sure that you can open Visual Studio Code and can open and save a file.
-
-## 3. Terminal based git
-
-We expect students to have access to command line / terminal versions of git. While there are visual ways to access git (such as TortoiseGit, etc.) we expect git to be available on the command line when debugging issues. 
-
-More information on git can be found [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Note that git (probably) will not need to be installed as it is frequently installed as part of another package.
-
-**Verification:** Make sure that you can open your terminal app and type in the following without getting an error:
-
     git --version
-
-## 4. Docker
-
-On Mac you should install [docker desktop](https://docs.docker.com/desktop/) which is relatively straightforward to install. 
-
-On Windows you will need to follow the instructions [here](https://docs.docker.com/desktop/windows/wsl/) for how to install docker on WSL.
-
-**Verification:** Open up your terminal and type in the following command. If it returns without an error then Docker is installed.
-
-    docker --version
-
-
-## 5. Make
-
-Many projects use [make](https://www.gnu.org/software/make/manual/make.html) as a way to simplify project development. 
-
-On both Mac and WSL systems with Ubuntu make (should) be installed by default. To verify _check the instructions at the end of this section_.
-
-If not present on WSL/Ubuntu systems you will need to install the `build-essentials` package, which can be done by typing the following at the command prompt or using the Ubuntu installer:
-
-    sudo apt-get install build-essential
-
-On Mac systems, make will also generally be installed, but if it is not then type
-
-    xcode-select --install
-
-to start an installation of XCode Command Line Tools.
-
-**Verification:** Open your terminal and type in the following command. If it returns without an error than make is installed:
-
     make --version
+    docker run --rm hello-world
 
-## 6. SSH Keys
+The first three commands should print version information. Docker should print a success message.
 
-We will use SSH keys to authenticate to github and (if applicable) the DSI Cluster. Please see [these instructions](./ssh_github_cluster.md). 
+</div>
 
-**Verification:** Open your terminal and type the following command:
+In VS Code, confirm you can open, edit, and save a file.
 
-    ssh -T git@github.com
+<h2 id="2-set-up-github-and-ssh">2. Set up GitHub and SSH</h2>
 
-If this returns your username and something to the effect of `You've Successfully Authenticated` then it has worked. 
+Create a [GitHub account](https://github.com/signup) if you need one. Follow the [SSH setup guide](./ssh_github_cluster.md), choosing the same operating system and work location.
 
-## 7. Claude Code
+<div data-work-location="local" hidden markdown="1">
 
-The University is providing access to Claude Enterprise accounts. Please [see these instructions for activating your account](https://intranet.uchicago.edu/tools-and-resources/tools-and-applications/claude/getting-started-with-claude) if you need. Then install Claude Code [using these instructions](https://claude.com/product/claude-code) either as a desktop application or as CLI.
+Create or reuse a key on your local computer and add its public key to GitHub.
 
-**Verification:** Start a Claude Code session either in the desktop app or in a terminal. 
+**Check:** The GitHub check in your local terminal should greet you with your GitHub username.
 
-## 8. Box
+</div>
 
-We use Box for large file storage on many projects. Data that is too large to commit lives in a shared Box folder, and your project reads it through a `DATA_DIR` path set in the project's `.env` file rather than keeping the data in the repository. You can use your CNET to access your [university account here](https://uchicago.account.box.com/login).
+<div data-work-location="cluster" hidden markdown="1">
 
-You need **Box Drive**, not just the website, so that your code -- and the Docker container it runs in -- can open Box files like ordinary files. Download it [here](https://www.box.com/resources/downloads) and sign in with your CNET.
+Set up both connections: **your computer → cluster**, then **cluster → GitHub**. The guide tells you where to create each key and run each command.
 
-On Mac, Box Drive syncs to `~/Library/CloudStorage/Box-Box/` and requires no further setup.
+**Check:** Log in to the cluster with your local key, then run the GitHub check on the cluster using your cluster key.
 
-On Windows, Box Drive is a Windows application and the folder it creates cannot be read from WSL without additional configuration. Please see [these instructions](./box-wsl.md).
+</div>
 
-**Verification:** First, in the [Box web app](https://uchicago.account.box.com), create a markdown file named `clinic-test.md` in your top-level folder containing the word `hello`. Then open your terminal and confirm you can list your Box folder, read that file, and read it from inside Docker. On Mac:
+<h2 id="3-clone-your-project">3. Open your project</h2>
 
-    ls ~/Library/CloudStorage/Box-Box/
-    cat ~/Library/CloudStorage/Box-Box/clinic-test.md
-    docker run --rm -v ~/Library/CloudStorage/Box-Box:/data alpine cat /data/clinic-test.md
+Ask your mentor or TA for the repository URL and access. Copy its **SSH** URL from GitHub's **Code** button.
 
-Each `cat` should print `hello`. On Windows, run the same three commands against `/mnt/Box` instead. Creating the file in the web app matters because Box only downloads files on demand, so a successful `ls` does not prove the file itself is available.
+<div data-work-location="cluster" hidden markdown="1">
 
-Finally, confirm that writes sync back up. Create a file from the terminal and check that it appears in the Box web app:
+<h3 id="6-connect-to-the-cluster-if-your-project-uses-it">Connect to the cluster</h3>
 
-    echo "hello again" > ~/Library/CloudStorage/Box-Box/clinic-test-2.md
+Your project needs a cluster account and permission to use compute nodes. Ask your TA if access has not been arranged. Complete the cluster steps in the [SSH guide](./ssh_github_cluster.md), including its authentication checks.
 
-On Windows, use `/mnt/Box/clinic-test-2.md` instead. Once everything works, you can delete both test files.
-
-## 9. DSI Cluster
-
-If you need to access the cluster then you will need to request an account (which should have already been done for you). You will then need to set up SSH keys and verify that you can SSH into the machine. Note that the step-by-step instructions for how to do this are included in the [same SSH Keys docs as in section 6](./ssh_github_cluster.md). 
-
-Note that as part of these instructions you will add your SSH key to github. This is a required part of this process.
-
-The cluster now uses `login.ds.uchicago.edu` to route each connection to the least-loaded login node. Direct SSH to individual login nodes is retired. If you already have a `Host fe.ds` entry in your local `~/.ssh/config`, change its `HostName` to `login.ds.uchicago.edu`. You can keep the `fe.ds` nickname. See the [login node policy](https://cluster-policy.ds.uchicago.edu/using-the-cluster/login-nodes/).
-
-**Verification:** Open your terminal and type in the following command:
+In **Mac/Linux Terminal** or **Windows PowerShell** on your own computer, connect using the alias from that guide:
 
     ssh fe.ds
 
-If you have set this up correctly you should be connected to the AI cluster and see something like `CNET@fe01:~$`. The node name can change between connections; this is expected. After this, verify you set up ssh keys correctly:
+The load balancer chooses a login node, so a prompt such as `CNET@fe01:~$` can change between connections. Your home directory is shared; `tmux` and `screen` sessions stay on the node where they started.
 
-    ssh-add -l
-    ssh -T git@github.com
+Use login nodes for light file editing, transfers, and submitting or monitoring jobs. Run computation, code agents, and remote IDE backends on compute nodes. Consult the [current login node policy](https://cluster-policy.ds.uchicago.edu/using-the-cluster/login-nodes/) for resource limits.
 
-These commands should return something like `256 SHA256:sdlfjkwljflsdfkjs;flkjs;lfj user@host (ED25519)` and `Hi USERNAME! You've successfully authenticated ...`
+**Check compute access:** From the login node, request a short CPU-only session:
 
-Login nodes are limited to 1 CPU and 8 GB RAM per user, and 12 hours per process. Use compute nodes for computation, code agents, and remote IDE backends through [interactive sessions](https://cluster-policy.ds.uchicago.edu/using-the-cluster/interactive-sessions/) or [batch jobs](https://cluster-policy.ds.uchicago.edu/using-the-cluster/batch-jobs/).
+    srun --partition=general --qos=interactive --time=00:15:00 --cpus-per-task=1 --mem=2G --pty /bin/bash
 
-After this, to verify that you have access to the cluster, type in the following at that prompt:
+Once resources are allocated, run `hostname` to confirm you are on a compute node, then check `git --version`. Keep this compute session open for the project setup below.
 
-    srun -p general --pty /bin/bash
+</div>
 
-If the above command works then you should see something like `CNET@g007:~$` as the prompt. NOTE: you may get the error `srun: error: Lookup failed: Unknown host`, but you can ignore it. If you are NOT properly set up you will see `srun: error: Unable to allocate resources: Invalid account or account/partition combination specified`.
+<div data-work-location="local" hidden markdown="1">
 
-_Make sure to type in `exit` when you are done!_
+Run these commands in **Mac/Linux Terminal** or **Ubuntu** on your own computer:
 
-## 10. GitHub Repository Cloned
+</div>
 
-You should have your GitHub repository cloned to the correct location(s).
+<div data-work-location="cluster" hidden markdown="1">
 
-**Verification:** Open your GitHub repository in VS Code. 
-- If your project uses a devcontainer for Docker, it should be in the devcontainer extension. 
-- If you use Windows, your project should be located in the WSL filesystem.
-- If you are using the cluster, your repository should be cloned on the cluster.
+Run these commands **on your allocated compute node**:
 
-## 9. Box
+</div>
 
-Some projects store data or partner documents in [UChicago Box](https://uchicago.app.box.com/). Log in with your CNetID and confirm you can reach any Box folder your project uses. Your mentor or TA will tell you whether your project uses Box and which folder.
+    git clone YOUR_REPOSITORY_SSH_URL
+    cd YOUR_REPOSITORY_NAME
 
-Note that data from Box does not belong in the git repository. Follow the [large file storage](./large_file_storage.md) guidance instead.
+Follow the repository's README to configure its environment.
 
-**Verification:** Log into Box with your CNetID in a browser and open your project's folder.
+<div data-work-location="local" hidden markdown="1">
 
-## 10. Git and GitHub Workflow
+Open the project in VS Code:
 
-Clinic work is submitted as pull requests, so you need to be comfortable with the basic branch-commit-push-PR loop before week two.
+    code .
 
-**Verification:** In your project repository, check out a new branch, make a trivial commit, push the branch, and open a pull request. If any step of that is unfamiliar, work through [this Git branching tutorial](https://learngitbranching.js.org/?locale=en_US) and ask your TA. 
+If it uses a devcontainer, install VS Code's **Dev Containers** extension and choose **Dev Containers: Reopen in Container**.
+
+**Check:** Confirm the project's environment starts.
+
+</div>
+
+<div data-work-location="cluster" hidden markdown="1">
+
+For VS Code, use its **Remote - SSH** extension to connect to your allocated compute node, with the SSH configuration from the guide. Ask your TA for your team's connection workflow. Run `exit` to release this test session when finished.
+
+For project work, request the resources and time your team needs using the [interactive session](https://cluster-policy.ds.uchicago.edu/using-the-cluster/interactive-sessions/) or [batch job](https://cluster-policy.ds.uchicago.edu/using-the-cluster/batch-jobs/) instructions. For account or partition errors, see [cluster troubleshooting](./troubleshooting.md#cluster) or ask your TA.
+
+Use your team's documented data location on the cluster. If data must be transferred from Box, ask your mentor for the project's transfer procedure. Keep data out of Git.
+
+</div>
+
+Before week two, create a branch, make a small appropriate change, commit it, push it, and open a pull request. Ask your TA for help or use the [Git branching tutorial](https://learngitbranching.js.org/?locale=en_US).
+
+<h2 id="4-set-up-claude-code">4. Set up Claude Code</h2>
+
+[Activate your University Claude Enterprise account](https://intranet.uchicago.edu/tools-and-resources/tools-and-applications/claude/getting-started-with-claude).
+
+<div data-work-location="local" hidden markdown="1">
+
+[Install Claude Code](https://claude.com/product/claude-code) on your own computer.
+
+**Check:** Start a session in the desktop app or local project terminal.
+
+</div>
+
+<div data-work-location="cluster" hidden markdown="1">
+
+Use your team's cluster environment to [install Claude Code](https://claude.com/product/claude-code) and start a session in your project directory **on an allocated compute node**. Ask your TA if the repository does not document agent setup.
+
+**Check:** Confirm with `hostname` that you are on a compute node before starting the agent.
+
+</div>
+
+<div data-work-location="local" hidden markdown="1">
+
+<h2 id="5-connect-box-if-your-project-uses-it">5. Connect Box, if your project uses it</h2>
+
+Your mentor or TA will tell you which folder to use.
+
+<div id="setup-box-mac" data-platform="mac" hidden markdown="1">
+
+**Mac:** Install [Box Drive](https://www.box.com/resources/downloads) and sign in with your CNetID. In **Terminal**, set the path for the checks below:
+
+    BOX_DIR="$HOME/Library/CloudStorage/Box-Box"
+
+**Linux:** Ask your mentor for your project's Box download or mount procedure. Set `BOX_DIR` to the resulting local data folder before running the checks below.
+
+</div>
+
+<div id="setup-box-windows" data-platform="windows" hidden markdown="1">
+
+Install [Box Drive for Windows](https://www.box.com/resources/downloads) and sign in with your CNetID. Follow [Box on Windows (WSL)](./box-wsl.md) to mount it at `/mnt/Box`. In **Ubuntu**, set:
+
+    BOX_DIR=/mnt/Box
+
+</div>
+
+**Check:** In the [Box web app](https://uchicago.account.box.com/login), create `clinic-test.txt` in your top-level folder containing `hello`. Make it available locally using your platform's procedure, then run in **Mac/Linux Terminal** or **Ubuntu**:
+
+    ls "$BOX_DIR"
+    cat "$BOX_DIR/clinic-test.txt"
+    docker run --rm -v "$BOX_DIR:/data" alpine cat /data/clinic-test.txt
+    echo "hello again" > "$BOX_DIR/clinic-test-2.txt"
+
+Both `cat` commands should print `hello`. If your setup syncs files, confirm `clinic-test-2.txt` appears in the Box web app. Delete both test files afterward. Checking a real file matters because Box Drive downloads contents on demand.
+
+Set your project's `DATA_DIR` in its local `.env` file to the folder your mentor specifies. Keep data out of Git; see [large file storage](./large_file_storage.md).
+
+</div>
+
+</div>

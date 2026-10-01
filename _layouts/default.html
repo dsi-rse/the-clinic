@@ -58,6 +58,9 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if page.tutorial_choices %}
+    <script src="{{ "/assets/js/tutorial-choices.js" | relative_url }}"></script>
+    {% endif %}
     <script>
       // Add anchor links to all headers with IDs
       document.addEventListener('DOMContentLoaded', function() {

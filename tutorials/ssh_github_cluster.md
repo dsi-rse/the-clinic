@@ -1,307 +1,221 @@
 ---
-title: "SSH and GitHub Cluster Connection"
+title: "SSH for GitHub and the DSI Cluster"
+tutorial_choices: true
 ---
 
-# SSH / Connecting to the Computing Cluster
+# SSH for GitHub and the DSI cluster
 
-## Background
+SSH keys let you authenticate without entering your account password each time. Your **public key** ends in `.pub` and can be shared. Your **private key** has no `.pub` suffix; keep it on the machine where you create it.
 
-This document contains instructions for two important pieces of the data science clinic:
-  1. How to access `github` via `ssh`
-  2. How to access the DSI cluster via `ssh`
+Choose your **operating system** and **work location**, matching your choices in the computer setup checklist, to reveal the steps you need.
 
-Depending on what you are working on you may need to do both or just have access via github. Sections marked [CLUSTER] are only required for using the cluster.
+{% include tutorial-choices.html %}
 
-<!-- Research institutions often have computing clusters that can be used to perform tasks that are too intensive to be run on a typical laptop, such as training an LLM or analyzing large amounts of data. A computing cluster is a collection of computers (also referred to as nodes, machines, or servers) that are 'in the cloud' (you are not physically at one of them when using them).  -->
+<div data-platform-guide hidden markdown="1">
 
-Please read all portions carefully and only skip if you really know what you are doing. If you come across an issue, check that it isn't addressed in [Troubleshooting](troubleshooting.md) before asking. 
+<ol data-tutorial-contents aria-label="Tutorial steps"></ol>
 
-If you are looking for instructions on using slurm to submit compute jobs, please refer to [the clinic's SLURM documentation](slurm.md)
+<div data-work-location="local" hidden markdown="1">
 
-If there is a section which is unclear or needs updating, please open an issue or pull request!
+You will create a key on your computer and add its public key to GitHub.
 
-## Table of Contents
+Already set up? Run `ssh -T git@github.com` in your local project terminal. If it greets you with your GitHub username, you can return to the [computer setup checklist](./clinic-computer-setup.md#3-clone-your-project).
 
-- [SSH / Connecting to the Computing Cluster](#ssh--connecting-to-the-computing-cluster)
-  - [Background](#background)
-  - [Table of Contents](#table-of-contents)
-  - [Part 0: Do I (already) have access?](#part-0-do-i-already-have-access)
-  - [Part 1: SSH Background \& Prerequisites](#part-1-ssh-background--prerequisites)
-  - [Part II: Set up SSH](#part-ii-set-up-ssh)
-    - [Step 1: Verify/Install ssh-agent](#step-1-verifyinstall-ssh-agent)
-      - [\[Windows\] Enable OpenSSH](#windows-enable-openssh)
-      - [\[Mac/Linux\] Verify ssh-agent](#maclinux-verify-ssh-agent)
-    - [Step 2: Create / Manage SSH Keys](#step-2-create--manage-ssh-keys)
-      - [\[Windows Users Only\] Manage SSH Keys with WSL2](#windows-users-only-manage-ssh-keys-with-wsl2)
-    - [Step 3: Add your keys to ssh-agent](#step-3-add-your-keys-to-ssh-agent)
-    - [Step 4: \[CLUSTER\] Save SSH Configuration](#step-4-cluster-save-ssh-configuration)
-    - [Step 5: Enable Authentication with SSH Keys](#step-5-enable-authentication-with-ssh-keys)
-      - [Enabling access to github](#enabling-access-to-github)
-      - [\[CLUSTER\] Mac/Linux Instructions for Remote Authentication](#cluster-maclinux-instructions-for-remote-authentication)
-      - [\[CLUSTER\] Windows Instructions for Remote Authentication](#cluster-windows-instructions-for-remote-authentication)
-  - [Verification](#verification)
+</div>
 
-## Part 0: Do I (already) have access?
+<div data-work-location="cluster" hidden markdown="1">
 
-Some students may already have access to the cluster and github and may not need to follow the below instructions. To verify both your github and cluster access, type in the following in a _terminal window_:
+You need **two separate keys**, one for each connection:
 
-1. ```ssh -T git@github.com``` which, if set up properly should generate:
-  
-```
-Hi NickRoss! You've successfully authenticated, but GitHub does not provide shell access.
-Connection to github.com closed.
-```
+| Connection | Create the key on | Add the public key to |
+| --- | --- | --- |
+| Your computer → DSI cluster | Your local computer | Your cluster account |
+| DSI cluster → GitHub | The cluster | Your GitHub account |
 
-2. [CLUSTER] ```ssh fe.ds``` which, if set up properly should generate:
-   
-```
-~ ssh fe.ds
-  ###############################################################################
-  #                                                                             #
-  #   *****  IMPORTANT NOTICE: DO NOT RUN COMPUTE JOBS ON LOGIN NODE  *****     #
-  #                                                                             #
-  #  The login node is for connecting, editing, and submitting jobs only!       #
-  #                                                                             #
-  #  High-intensive compute jobs must be submitted through the SLURM scheduler. #
-  #  Use interactive sessions or submit batch jobs as appropriate.              #
-  #                                                                             #
-  #       Failure to comply may result in job termination without notice.       #
-  #                                                                             #
-  #                 For help, contact techstaff@cs.uchicago.edu                 #
-  #                                                                             #
-  ###############################################################################
+Your local private key stays on your computer; your cluster private key stays on the cluster. Your cluster home directory is shared across login and compute nodes, so you create the cluster key only once.
 
-Last login: Fri Sep 13 15:06:37 2024 from 10.150.1.240
-(base) nickross@fe01:~$
-```
+Your mentor or TA must arrange a cluster account and access to compute nodes. You need your **CNetID** for these steps.
 
-The login node name can change between connections. If an existing connection fails, [update your SSH configuration](#step-4-cluster-save-ssh-configuration) to use `login.ds.uchicago.edu`.
+</div>
 
-The above is also how we demonstrate access to the required resources. If you already have access to the resources that are required you do not need to complete this document.
+<h2 id="1-prepare-your-key">1. Local computer: prepare your key</h2>
 
-## Part 1: SSH Background & Prerequisites
+**Run these commands on your own computer.** These examples use `id_ed25519`. If you already have a working key, use its name and path throughout the local-computer steps. **Do not overwrite an existing key.**
 
-To be able to connect to the DSI's cluster you will need an internet connection and will log in using a technology called "secured shell protocol" [("SSH")](https://en.wikipedia.org/wiki/Secure_Shell). This document takes you through the steps to set up an account and login via SSH to this system.
+<div id="ssh-key-mac" data-platform="mac" hidden markdown="1">
 
-SSH is a command line tool which has a steeper learning curve than GUI-based systems such as VS Code. As such the instructions below will also install an extension to the VS Code IDE which allows you to connect your entire VS Code window to the cluster, allowing you to utilize all of VS Code's features and extensions.
+In **Terminal**, check for existing keys:
 
-We will focus on installing and verifying a number of different pieces of this software that will be installed or used in the manual below. The table below contains a brief glossary of some of the components that will be used.
+    mkdir -p ~/.ssh
+    ls ~/.ssh
 
-| Component Name | What it does / why is it important | 
-| --- | --- |
-| `wsl2` (Windows only) | This is required to be installed on windows machines to access `bash` and a unix terminal | 
-| `OpenSSH` | This is a common implementation of the SSH protocol, depending on your operating system
-| `ssh-agent` | This is a key manager for `ssh` which runs in the background. In this course there are two things which `ssh-agent` does: (1) it allows you to avoid entering in your `ssh` password every time you login and (2) it allows for forwarding of `ssh` keys, so that if you are logged into the cluster you can continue to use the keys that are on your machine. 
-| _Public_ `ssh` key | When you create an `ssh` key there are two files created, one of which is a _public_ key. This is _shareable_ and will usually be a file that ends in `.pub` 
-| _Private_ `ssh` key | When you create an `ssh` key the other file that is created is a `private` key. A private key _should never be shared_ as it is the key that allows you to enter other systems 
+</div>
 
-This guide is specifically tailored to the University of Chicago DSI Cluster, though it should be generally applicable to most Slurm clusters.
+<div id="ssh-key-windows" data-platform="windows" hidden markdown="1">
 
-_Before continuing, make sure that you have the following completed:_
+In **PowerShell**, check that `ssh -V` works. If it is missing, install the [Windows OpenSSH Client](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse). Check your existing keys:
 
-- A CNET id
-- [CLUSTER] A CS Account. If you are getting access through the Data Science Clinic, an account will be created for you. Otherwise you can get [one here](https://account-request.cs.uchicago.edu/account/requests).
-- [CLUSTER] Access to a Slurm partition. If you are getting access through the Data Science Clinic, this will be provided for you. Otherwise send an email to techstaff@cs.uchicago.edu asking for access to compute nodes on the DSI cluster.
-- A reasonably up to date and functioning computer running on Windows (10/11), Mac (10.13+/High Sierra+), or Linux. 
-- An internet connection. You'll need internet to use SSH.
-- VS Code Installed
-- A GitHub account
+    Get-ChildItem "$env:USERPROFILE\.ssh"
 
-[CLUSTER] Notes: You do not need access to a Slurm partition to continue and set up *access* to the cluster, but you will need it to *use* the cluster. 
+If that directory does not exist, continue with key creation below.
 
+</div>
 
- <table border="1">
-  <tr>
-    <td><strong>Do NOT go past this until you have completed the above.</strong></td>
-  </tr>
-</table>
+If you need a new key, run in the **same local terminal**:
 
-## Part II: Set up SSH
+    ssh-keygen -t ed25519 -C "YOUR_EMAIL"
 
-It can be annoying / burdensome to constantly type in your passwords (*something only you know*) to connect to the cluster or push/pull from GitHub. We can switch to authenticating based on *something only you have* using ssh keys and greatly reduce the friction of developing. 
+Accept the default filename and choose a passphrase.
 
-### Step 1: Verify/Install ssh-agent
-There are different steps for Windows users and Mac/Linux users. Follow the below steps. 
+<div data-platform="mac" hidden markdown="1">
 
-#### [Windows] Enable OpenSSH
+Load the key into your agent:
 
-To set up Windows to use ssh like linux complete the following (from [this SO answer](https://stackoverflow.com/a/40720527)):<!-- markdown-link-check-enable -->
-1. Open "Manage optional features" or "Optional features" from the start menu and make sure you have Open SSH Client in the list. If not, you should be able to add it.
-2. Open Services from the start Menu
-3. Scroll down to OpenSSH Authentication Agent > right click > properties.
-4. Change the Startup type from Disabled to "Automatic (Delayed Start)"
-5. Open cmd and type `where ssh` to confirm that the top listed path is in System32. Mine is installed at `C:\Windows\System32\OpenSSH\ssh.exe`. If it's not in the list you may need to close and reopen cmd.
-6. You should now be able to access OpenSSH tools from the Windows Command Prompt. Continue to General Instructions. 
+    ssh-add ~/.ssh/id_ed25519
 
-<table border="1">
- <tr>
-   <td><strong>Windows: Do NOT continue until in PowerShell, `Get-Service ssh-agent` returns with a 'Running' Status <em>after</em> rebooting.</strong></td>
- </tr>
-</table>
+If this reports that it cannot connect to an authentication agent, start one with `eval "$(ssh-agent -s)"`, then repeat `ssh-add`.
 
-#### [Mac/Linux] Verify ssh-agent
+Print your **local public key**:
 
-1. Mac/Linux: In the terminal, type in `echo $SSH_AUTH_SOCK` 
-   - If this returns _nothing_ then you need to install `ssh-agent`
-     - You will need to add the command `eval $(ssh-agent)` to your shell configuration (`.zshrc/.bashrc`) file. 
+    cat ~/.ssh/id_ed25519.pub
 
-If ssh-agent was not running, please reboot and verify that it loads on start. 
+</div>
 
-<table border="1">
- <tr>
-   <td><strong>Mac/Linux: Do NOT continue until you have verified that ssh-agent runs <em>after</em> rebooting.</strong></td>
- </tr>
-</table>
+<div data-platform="windows" hidden markdown="1">
 
+In **PowerShell as administrator**, enable the key agent:
 
-### Step 2: Create / Manage SSH Keys
+    Set-Service -Name ssh-agent -StartupType Automatic
+    Start-Service ssh-agent
 
-1. In the terminal (Command Prompt in Windows) of your local computer navigate to the `.ssh` (pronounced "dot-s-s-h") directory: 
-    * On Linux/Mac `cd ~/.ssh`
-    * On Windows `cd C:\Users\YOUR_USERNAME\.ssh\`
-2. Use `ssh-keygen`, [instructions here](https://www.ssh.com/academy/ssh/keygen). Recommended: use `ssh-keygen -t ecdsa -b 521` or `ssh-keygen -t ed25519` to generate your key. 
-3. You will be prompted to enter a file name for the key. Give it an identifiable name, such as `dsi_cluster` and verify the file is in the  directory listed above. Otherwise you can click enter to accept the default suggestion. 
-4. You can _optionally_ add a password to your SSH key, though it is not required. As you type the password in, no text will appear on screen to keep your password length private from shoulder surfers. You will be asked to repeat it. Do not forget your password! Write it down, or ideally store it in a password manager.
-5. After running this there should be two files in the `.ssh` directory. A `KEYNAME` and `KEYNAME.pub` file will be created by this command. The file with the `.pub` extension is your public key and can be shared safely. The file with no extension is your private key and should never be shared. `KEYNAME` will either be the name you specified above or the the encryption type. 
+Return to **ordinary PowerShell** to load your key and print your **local public key**:
 
-<table border="1">
- <tr>
-   <td><strong>Do not continue until you have verified that both files mentioned above exist in the .ssh directory.</strong></td>
- </tr>
-</table>
+    ssh-add "$env:USERPROFILE\.ssh\id_ed25519"
+    Get-Content "$env:USERPROFILE\.ssh\id_ed25519.pub"
 
-#### [Windows Users Only] Manage SSH Keys with WSL2
-If you are using Windows you need to [install WSL ("Windows Subsystem for Linux")](https://learn.microsoft.com/en-us/windows/wsl/install) on your machine. Installing this allows Windows users access to core Unix based functionality. If you are doing local developement on your Windows machine, you should do it in WSL. TODO
+<div data-work-location="local" hidden markdown="1">
 
-To confirm proper installation:
-`wsl printf 'Default shell: $0\nUsername: $USER\nHome Directory: $(cd ~ && pwd)'`
-This should return:
-```
-Default shell: /bin/bash
-Username: YOUR_WSL_USERNAME
-Home Directory: /home/YOUR_WSL_USERNAME
-```
-Where `YOUR_WSL_USERNAME` is the username you picked when setting up WSL. It <b>should not be `root`</b> If one of these is incorrect, please go to [troubleshooting instructions](./troubleshooting.md#troubleshooting-wsl)
+**Ubuntu (WSL):** PowerShell and Ubuntu have separate SSH settings. To use the same key for Git in Ubuntu, copy the key pair from Windows. Replace `YOUR_WINDOWS_USERNAME` with your Windows account name, which may differ from your Linux username. If Ubuntu already has a working key, keep it and add its public key to GitHub too.
 
-The convenience of 'pretending' to have two separate operating systems on one can lead to complications. One is with SSH keys, which is the core method we use to authenticate to the DSI Cluster.
+    mkdir -p ~/.ssh
+    cp -i /mnt/c/Users/YOUR_WINDOWS_USERNAME/.ssh/id_ed25519 ~/.ssh/
+    cp -i /mnt/c/Users/YOUR_WINDOWS_USERNAME/.ssh/id_ed25519.pub ~/.ssh/
+    chmod 700 ~/.ssh
+    chmod 600 ~/.ssh/id_ed25519
+    chmod 644 ~/.ssh/id_ed25519.pub
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_ed25519
 
-The .ssh directory used on your normal Windows system and your WSL will be different from each other. This is fine in most cases, but can lead to headaches when using VS Code. If you wish to connect to a remote SSH machine in VS code, it will use your Windows configuration. So even if you only use WSL and the VS Code extension (WSL) to code in WSL2, you must follow the [Windows ssh instructions](#windows-users-only-manage-ssh-keys-with-wsl2). To use the same keys on each system, you can copy them. Following these instructions adapted from [this article](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/):
+</div>
 
-1. Open a terminal in WSL.
-1. Make sure you have an .ssh folder in WSL: `mkdir -p ~/.ssh`. The `-p` means to ignore if the directory already exists.
-1. Copy keys from Windows to WSL with `cp -r /mnt/c/Users/YOUR_USERNAME/.ssh ~/.ssh`
-1. SSH keys should have special permissions (on a shared computer you wouldn't want other users to be able to read your private key!). Run `chmod 600 ~/.ssh/KEYNAME` and `chmod 644 ~/.ssh/KEYNAME.pub` for all the `KEYNAME`s you wish to use in WSL. 
-1. Run `chmod 700 ~/.ssh`. 
+</div>
 
-<table border="1">
- <tr>
-   <td><strong>Do not continue until you have verified correct installation of WSL and can find your SSH key in both Windows and WSL</strong></td>
- </tr>
-</table>
+**Check:** Run `ssh-add -l` in your local terminal. It should list your key. If the agent has no identities in a later session, load your key with `ssh-add` again. See [GitHub's key and agent guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for details.
 
+<div data-work-location="local" hidden markdown="1">
 
-### Step 3: Add your keys to ssh-agent
+<h2 id="2-add-the-public-key-to-github">2. Local computer: connect to GitHub</h2>
 
-1. Add your key to the `ssh-agent`. To do this type in `ssh-add PATH_TO_PRIVATE_KEY`. `PATH_TO_PRIVATE_KEY` should be the _full path_ to the private file. You'll have to type your password in once and it will be saved for a period of time (terminal session or until your computer next reboots), drastically limiting the amount of times you have to type in your password. 
-<!-- 2. markdown-link-check-disable[Mac Users Only] (optional) To keep the key in your `ssh-agent` across sessions, follow [this stack overflow answer](https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login). markdown-link-check-enable  -->
-2. Confirm your key was added. In your terminal/command prompt/powershell, run `ssh-add -l` to list all keys in your ssh agent. Your key should appear here. If this command returns `The agent has no identities.`, step 3 failed. 
+{% include github-ssh.md location="local" title="clinic laptop" %}
 
-<table border="1">
- <tr>
-   <td><strong>Do not continue until you have verified that your key file appears when you run <code>ssh-add -l</code></strong></td>
- </tr>
-</table>
+<div data-platform="windows" hidden markdown="1">
 
-### Step 4: [CLUSTER] Save SSH Configuration
+Run this check in **Ubuntu** too, since that is where you will use Git.
 
-We have now created an ssh key file that will allow us to login to the cluster. However, to login we will need to provide the path to key file as well as the username each time we want to login (something like `ssh -i PATH_TO_KEY USERNAME@login.ds.uchicago.edu`) which is annoying and error-prone. We will use a config file, in our `.ssh` directory to simplify this process. Instead we will be able to login using just `ssh fe.ds` after completing this process.
+</div>
 
-If you already have a cluster entry, update its `HostName` to `login.ds.uchicago.edu` and keep your existing username and key path. The `Host` name is a local nickname, so `fe.ds` still works. See the [login node policy](https://cluster-policy.ds.uchicago.edu/using-the-cluster/login-nodes/).
+Return to the [computer setup checklist](./clinic-computer-setup.md#3-clone-your-project).
 
-1. Create / modify your SSH config file. To open:
-    - [Windows] In command prompt: `code C:\Users\USERNAME\.ssh\config` where `USERNAME` is your windows username. 
-    - [Mac] In a terminal: `touch ~/.ssh/config` to create the file if it does not exist and `open ~/.ssh/config` to open it.
-2. You may or may not already have configurations saved. Update an existing cluster entry, or add the text below before any `Host *` block. Avoid adding a second entry for the same host.
+</div>
 
-[Mac/Linux]:
+<div data-work-location="cluster" hidden markdown="1">
+
+<h2 id="3-configure-cluster-access-if-needed">2. Local computer: authorize cluster access</h2>
+
+**Stay on your local computer.** In your local terminal, open your **local** SSH config in VS Code:
+
+    code "$HOME/.ssh/config"
+
+Create the file if it does not exist. Update existing cluster entries, or add these before any `Host *` block. Replace `YOUR_CNET` and, if needed, the local key filename:
 
 ```
-Host fe.ds*
+Host fe.ds
   HostName login.ds.uchicago.edu
-  IdentityFile PATH_TO_PRIVATE_KEY
-  ForwardAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+  ForwardAgent no
   User YOUR_CNET
 
 Host *.ds !fe.ds
   HostName %h.uchicago.edu
-  IdentityFile PATH_TO_PRIVATE_KEY
-  ForwardAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+  ForwardAgent no
   User YOUR_CNET
   ProxyJump fe.ds
 ```
 
-[Windows]
+`fe.ds` is your nickname for the login load balancer. The second block lets you reach an allocated compute node through it, using a name such as `g007.ds`. This setup uses the cluster's own key for GitHub.
+
+**Existing users:** Change a retired `fe01.ds.uchicago.edu`, `fe02.ds.uchicago.edu`, or `fe03.ds.uchicago.edu` hostname to the `HostName` shown above, and change `ForwardAgent yes` to `ForwardAgent no` in these entries. Keep your existing key path and username. See the [current login node policy](https://cluster-policy.ds.uchicago.edu/using-the-cluster/login-nodes/).
+
+From your **local terminal**, send your **local public key** to the cluster. This command asks for your cluster account password and adds the key to the cluster's `authorized_keys` file.
+
+<div id="ssh-authorize-mac" data-platform="mac" hidden markdown="1">
+
+    cat ~/.ssh/id_ed25519.pub | ssh fe.ds 'umask 077; mkdir -p ~/.ssh; chmod 700 ~/.ssh; cat >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys'
+
+</div>
+
+<div id="ssh-authorize-windows" data-platform="windows" hidden markdown="1">
+
+    Get-Content "$env:USERPROFILE\.ssh\id_ed25519.pub" | ssh fe.ds "umask 077; mkdir -p ~/.ssh; chmod 700 ~/.ssh; cat >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys"
+
+</div>
+
+<h2 id="4-verify-cluster-access">3. Local computer: log in to the cluster</h2>
+
+In your **local terminal**, run:
+
+    ssh fe.ds
+
+You should connect without entering your cluster account password; your key passphrase may still be requested. Run `hostname` to confirm you are on the cluster. The prompt may show `fe01`, `fe02`, or `fe03`, and the node can change between connections.
+
+**Keep this SSH session open. The remaining commands run on the cluster.** If the connection fails, see [cluster troubleshooting](./troubleshooting.md#troubleshooting-cluster) or ask your TA.
+
+<h2 id="create-cluster-github-key">4. Cluster: create your GitHub key</h2>
+
+**Run these commands in the cluster terminal you just opened.** Check for existing keys:
+
+    mkdir -p ~/.ssh
+    chmod 700 ~/.ssh
+    ls ~/.ssh
+
+If you already have a cluster key that authenticates to GitHub, reuse it and substitute its filename below. Otherwise, create a **new key on the cluster**:
+
+    ssh-keygen -t ed25519 -C "YOUR_GITHUB_EMAIL" -f ~/.ssh/id_ed25519_github
+
+Choose a passphrase. If that filename already exists, stop and check it rather than overwriting it. These files stay in your cluster home directory.
+
+Print your **cluster public key**:
+
+    cat ~/.ssh/id_ed25519_github.pub
+
+<h2 id="connect-cluster-to-github">5. Cluster: connect to GitHub</h2>
+
+Back in the **cluster terminal**, open the cluster's `~/.ssh/config` in a text editor. For example, run `nano ~/.ssh/config`; use **Ctrl+O**, then **Enter** to save, and **Ctrl+X** to exit. Add or update this entry before any `Host *` block:
 
 ```
-Host fe.ds*
-  HostName login.ds.uchicago.edu
-  IdentityFile PATH_TO_PRIVATE_KEY
-  ForwardAgent yes
-  User YOUR_CNET
-  MACs hmac-sha2-512
-
-Host *.ds !fe.ds
-  HostName %h.uchicago.edu
-  IdentityFile PATH_TO_PRIVATE_KEY
-  ForwardAgent yes
-  User YOUR_CNET
-  ProxyJump fe.ds
-  MACs hmac-sha2-512
+Host github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_github
+  IdentitiesOnly yes
 ```
 
-Replace `YOUR_CNET` with your CNET ID and `PATH_TO_PRIVATE_KEY` with the path the key you previously created. [Windows: `PATH_TO_PRIVATE_KEY` will be `/Users/USERNAME/.ssh/KEYNAME` where `USERNAME` is your windows username and `KEYNAME` is the name of the key you created. Starting with the root directory `/` is not standard for windows and will not typically work in other situations.] This will map `fe.ds` to an ssh command to the listed hostname, with the listed user and private key, and using the listed identity file as your key. `ForwardAgent` set to yes means that any ssh keys added to your local agent will also be added to the remote machines ssh agent (so you can use your local ssh key for GitHub on the cluster, for example). The second block is for connecting directly to compute nodes.
+{% include github-ssh.md location="cluster" title="DSI cluster" %}
 
-3. Save and close the file.
+**Both connections are ready:** you can log in from your computer to the cluster, and Git running on the cluster can authenticate to GitHub. Run `exit` to return to your local computer.
 
-Each connection can reach a different login node. Your home directory is shared, but `tmux` and `screen` sessions stay on the node where they started. They do not move running programs between nodes. Use compute nodes for long-running work.
+Continue with the [checklist's compute access check](./clinic-computer-setup.md#6-connect-to-the-cluster-if-your-project-uses-it).
 
-### Step 5: Enable Authentication with SSH Keys
+</div>
 
-For a private key to work for authenticating, the service you are authenticating with must have access to your public key. We will set this up for github and the cluster.
-
-#### Enabling access to github
-
-1. Print your public key:
-   - [Windows] In command prompt: `type C:\Users\USERNAME\.ssh\KEYNAME.pub` where `USERNAME` is your Windows username and `KEYNAME` is the key your created. 
-   - [Mac/Linux] In a terminal: `cat ~/.ssh/KEYNAME.pub` where `KEYNAME` is the key you created. 
-2. Copy your public key. Highlight and copy *the entire output*. `ctrl+c` may not work in terminal. `ctrl+shift+c` or right click may work. 
-3. Add the public key to GitHub. To give GitHub access to your public keys, go to [GitHub's ssh keys page](https://github.com/settings/keys). 
-4. Click 'New SSH key'. Give it a name relating to the machine it is stored on, like "windows laptop", or "linux desktop" and paste in the full contents of the public key.
-5. Verify your key was added. In terminal / command prompt, try `ssh -T git@github.com` it should respond with `Hi GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.` or something similar. 
-
-<table border="1">
-  <tr>
-    <td><strong>Do not continue until you have verified a success message when you run <code>ssh -T git@github.com</code></strong></td>
-  </tr>
-</table>
-
-#### [CLUSTER] Mac/Linux Instructions for Remote Authentication 
-1. If on Mac/Linux, you can use `ssh-copy-id -i ~/.ssh/KEYNAME_HERE.pub fe.ds`, replacing `KEYNAME_HERE` with the name of the public ssh key you would like to use (it should end with .pub). 
-2. You will be prompted for `USERNAME@login.ds.uchicago.edu`'s password. This will be your CNET password.
-3. To verify success: In your terminal, `ssh fe.ds` should connect you to the cluster without typing any password.
-
-#### [CLUSTER] Windows Instructions for Remote Authentication
-1. Copy your public key as in step 1 of [enabling access to github](#enabling-access-to-github).
-2. Now connect to the server. Do `ssh fe.ds`. You'll have to type in your UChicago password. Your command prompt is now attached to the login node. The bottom left of your screen should say something like `USERNAME@fe01:~$`. 
-3. Ensure there is an `.ssh` directory. If there is not, run `mkdir .ssh`. 
-4. Add your public key to the list of authorized keys. Run `echo "PUBLIC_KEY_HERE" >> .ssh/authorized_keys`, replacing `PUBLIC_KEY_HERE` with the copied public key and maintaining the quotations. ctrl+v may not paste in your terminal. Try right clicking, ctrl+shift+v, and shift+insert. 
-5. Type `exit` to exit the cluster and return to your windows command prompt.
-6. To verify success: In your command prompt, `ssh fe.ds` should connect you to the cluster without typing any password.
-
-## Verification 
-
-Reboot your machine. 
-
-**At this point you should have access to both github and, optionally, the cluster. [Verify you access before proceeding](#part-0-do-i-already-have-access).**
-
-To learn more about using the cluster, see the [slurm documentation](./slurm.md)
+</div>
