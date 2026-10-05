@@ -94,13 +94,41 @@ We will use SSH keys to authenticate to github and (if applicable) the DSI Clust
 
 If this returns your username and something to the effect of `You've Successfully Authenticated` then it has worked. 
 
-## 7. Claude Code
+## 7. Python Interpreter
+
+An interpreter is the program that runs Python code; an environment is an interpreter plus a set of installed packages. VS Code calls choosing an environment "selecting an interpreter." You need one for:
+1. Running Python scripts.
+2. Executing Jupyter notebooks.
+3. Editor features in VS Code, such as autocomplete, go to definition, and highlighting errors and linting issues. VS Code can only check your code against the packages in the environment you select.
+
+### How to run Python scripts
+Python scripts should always be run inside of the Docker container, using a command like: `docker compose run --rm {project name} uv run my_python_script.py`, where `{project name}` is the service name in your `docker-compose.yaml`. If your terminal is already inside the container, `uv run my_python_script.py` is enough.
+
+### How to select an interpreter for Jupyter notebooks and editor features
+There are two ways to select an appropriate interpreter for notebooks and editor features.
+
+**First method: Virtual environment with uv, outside of Docker.** Follow these steps:
+1. Install uv, following the instructions [here](https://docs.astral.sh/uv/getting-started/installation/).
+2. In a terminal inside your project directory (not in the Docker container), run `uv sync --python 3.12`. This creates a virtual environment in `.venv`, downloading Python 3.12 if needed.
+3. Select the interpreter for editor features: open the Command Palette (`Cmd+Shift+P` on Mac, `Ctrl+Shift+P` on Windows), select `Python: Select Interpreter`, and choose the interpreter with a name like `{project name} (3.12.*) ./.venv/bin/python`.
+4. Select the interpreter for a Jupyter notebook in VS Code: If you do not have an interpreter selected, there will be a `Select Kernel` option in the top-right of your notebook. Click it, click `Python Environments...` and select the interpreter with a name like `{project name} (3.12.*) ./.venv/bin/python`.
+
+**Second method: Attach VS Code to a running Docker container.** Follow these steps (requires the Dev Containers extension):
+1. In a terminal inside your project directory, run `make run-interactive`. This will start an interactive session inside the Docker container. Leave this terminal open: when you exit it, the container is deleted and VS Code disconnects.
+2. Click the `><` symbol in the bottom-left of your VS Code window and select `Attach to Running Container`. If a warning message appears, select `Got it`.
+3. Select the container: There should be only one container to select in the dropdown. If there are multiple, select the one that contains the name of your project. This will open a new VS Code window with `>< Container {project name}` in the bottom left corner.
+4. The first time you do this for this project, a project folder will not be selected. Click the file explorer icon in the top left, click **Open Folder**, delete the default (probably `/root/`) and type `/project/` and hit enter.
+5. Also the first time, install the Python and Jupyter extensions in the container: open the Extensions view, find them under `Local - Installed` (they will show as disabled), and install each one in the container.
+6. Select the interpreter for editor features: open the Command Palette (`Cmd+Shift+P` on Mac, `Ctrl+Shift+P` on Windows), select `Python: Select Interpreter`, and choose the interpreter with a name like `Python 3.12.* /opt/venv/bin/python` (not `./.venv/bin/python`).
+7. Select the interpreter for a Jupyter notebook in VS Code: If you do not have an interpreter selected, there will be a `Select Kernel` option in the top-right of your notebook. Click it, click `Python Environments...` and select the interpreter with a name like `Python 3.12.* /opt/venv/bin/python` (not `./.venv/bin/python`).
+
+## 8. Claude Code
 
 The University is providing access to Claude Enterprise accounts. Please [see these instructions for activating your account](https://intranet.uchicago.edu/tools-and-resources/tools-and-applications/claude/getting-started-with-claude) if you need. Then install Claude Code [using these instructions](https://claude.com/product/claude-code) either as a desktop application or as CLI.
 
 **Verification:** Start a Claude Code session either in the desktop app or in a terminal. 
 
-## 8. Box
+## 9. Box
 
 We use Box for large file storage on many projects. Data that is too large to commit lives in a shared Box folder, and your project reads it through a `DATA_DIR` path set in the project's `.env` file rather than keeping the data in the repository. You can use your CNET to access your [university account here](https://uchicago.account.box.com/login).
 
@@ -124,7 +152,7 @@ Finally, confirm that writes sync back up. Create a file from the terminal and c
 
 On Windows, use `/mnt/Box/clinic-test-2.md` instead. Once everything works, you can delete both test files.
 
-## 9. DSI Cluster
+## 10. DSI Cluster
 
 If you need to access the cluster then you will need to request an account (which should have already been done for you). You will then need to set up SSH keys and verify that you can SSH into the machine. Note that the step-by-step instructions for how to do this are included in the [same SSH Keys docs as in section 6](./ssh_github_cluster.md). 
 
@@ -153,7 +181,7 @@ If the above command works then you should see something like `CNET@g007:~$` as 
 
 _Make sure to type in `exit` when you are done!_
 
-## 10. GitHub Repository Cloned
+## 11. GitHub Repository Cloned
 
 You should have your GitHub repository cloned to the correct location(s).
 
@@ -170,7 +198,7 @@ Note that data from Box does not belong in the git repository. Follow the [large
 
 **Verification:** Log into Box with your CNetID in a browser and open your project's folder.
 
-## 10. Git and GitHub Workflow
+## 12. Git and GitHub Workflow
 
 Clinic work is submitted as pull requests, so you need to be comfortable with the basic branch-commit-push-PR loop before week two.
 
