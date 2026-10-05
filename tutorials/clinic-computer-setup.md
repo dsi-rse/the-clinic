@@ -99,16 +99,18 @@ If this returns your username and something to the effect of `You've Successfull
 An interpreter is the program that runs Python code; an environment is an interpreter plus a set of installed packages. VS Code calls choosing an environment "selecting an interpreter." You need one for:
 1. Running Python scripts.
 2. Executing Jupyter notebooks.
-3. Editor features in VS Code, such as autocomplete, go to definition, and highlighting errors and linting issues. VS Code can only check your code against the packages in the environment you select.
+3. Editor features in VS Code, such as autocomplete, go to definition, highlighting errors and linting issues, and using the Run And Debug VS Code feature. VS Code can only check your code against the packages in the environment you select.
 
 ### How to run Python scripts
-Python scripts should always be run inside of the Docker container, using a command like: `docker compose run --rm {project name} uv run my_python_script.py`, where `{project name}` is the service name in your `docker-compose.yaml`. If your terminal is already inside the container, `uv run my_python_script.py` is enough.
+Python scripts should always be run inside of the Docker container, using a command like: `docker compose run --rm {project name} uv run my_python_script.py`, where `{project name}` is the service name in your `docker-compose.yaml`, or through a convenient `make` command to shorthand the longer command. 
+
+You may also run from a terminal running inside the Docker container (started using `make run-interactive`), in which case `uv run my_python_script.py` is enough.
 
 ### How to select an interpreter for Jupyter notebooks and editor features
 There are two ways to select an appropriate interpreter for notebooks and editor features.
 
 **First method: Virtual environment with uv, outside of Docker.** Follow these steps:
-1. Install uv, following the instructions [here](https://docs.astral.sh/uv/getting-started/installation/).
+1. Install uv, following the instructions [here](https://docs.astral.sh/uv/getting-started/installation/). If you are using Windows, you should install uv in WSL.
 2. In a terminal inside your project directory (not in the Docker container), run `uv sync --python 3.12`. This creates a virtual environment in `.venv`, downloading Python 3.12 if needed.
 3. Select the interpreter for editor features: open the Command Palette (`Cmd+Shift+P` on Mac, `Ctrl+Shift+P` on Windows), select `Python: Select Interpreter`, and choose the interpreter with a name like `{project name} (3.12.*) ./.venv/bin/python`.
 4. Select the interpreter for a Jupyter notebook in VS Code: If you do not have an interpreter selected, there will be a `Select Kernel` option in the top-right of your notebook. Click it, click `Python Environments...` and select the interpreter with a name like `{project name} (3.12.*) ./.venv/bin/python`.
@@ -189,12 +191,6 @@ You should have your GitHub repository cloned to the correct location(s).
 - If your project uses a devcontainer for Docker, it should be in the devcontainer extension. 
 - If you use Windows, your project should be located in the WSL filesystem.
 - If you are using the cluster, your repository should be cloned on the cluster.
-
-## 9. Box
-
-Some projects store data or partner documents in [UChicago Box](https://uchicago.app.box.com/). Log in with your CNetID and confirm you can reach any Box folder your project uses. Your mentor or TA will tell you whether your project uses Box and which folder.
-
-Note that data from Box does not belong in the git repository. Follow the [large file storage](./large_file_storage.md) guidance instead.
 
 **Verification:** Log into Box with your CNetID in a browser and open your project's folder.
 
