@@ -8,7 +8,7 @@ title: "Computer Setup for Data Science Clinic"
 
 This document contains information on how to prepare you computer for the data science clinic. Note that if you do not have these set up properly your grade may be penalized.
 
-**This is the required technical onboarding for the first week of the quarter.** Work through it during week one and escalate anything that does not work to your TA — do not let a broken setup carry into week two. You cannot push code if your environment does not work, and a week with no pushed code is a 0.
+**This is the required technical onboarding for the first week of the quarter.** Work through it during week one and escalate anything that does not work to your TA — do not let a broken setup carry into week two. Each week that you fail to complete your tasks and push assigned coding tasks will give you a grade of 0. Solve your setup issues now and escalate issues to clinic staff as soon as possible. 
 
 Importantly there may be alternatives to the software listed below that has similar functionality. In the case of you using an alternative you will not receive support from the clinic staff/TAs/etc. We _strongly_ recommend you use the options below.
 
