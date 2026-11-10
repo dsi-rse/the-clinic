@@ -7,6 +7,7 @@
 - [As a Data Science Major, can I take the clinic over two non-consecutive quarters?](#non-consecutive-quarters)
 - [Is the Data Science Clinic a two quarter class?](#two-quarter-class)
 - [Can I take Clinic twice in one quarter?](#twice-in-one-quarter)
+- [How do I drop the course?](#drop-instructions)
 
 ### Prerequisites and Registration
 - [What are the prerequisites?](#prerequisites)
@@ -46,6 +47,9 @@ For students who are not Data Science majors, we strongly encourage planning to 
 
 ### Can I take Clinic twice in one quarter? {#twice-in-one-quarter}
 No. Students may only work on one project per quarter.
+
+### How do I drop the course? {#drop-instructions}
+Email your request to the Clinic instructor, CCing [Kelly O'Brien](mailto:ktobrien@uchicago.edu) and your academic advisor. This action should be taken in extreme circumstances.
 
 ## Prerequisites and Registration {#prerequisites-and-registration}
 
