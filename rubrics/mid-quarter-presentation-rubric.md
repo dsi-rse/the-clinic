@@ -22,7 +22,7 @@ The presentation will be conducted live during a specific week of the quarter at
 
 ### Grading
 
-All students in a group will receive the same grade in the presentation. Not all students need to present. Assessment will be made by the faculty and mentors who attend the mid-quarter presentations.
+All students in a group will receive the same grade in the presentation. Assessment will be made by the faculty and mentors who attend the mid-quarter presentations.
 
 <u>Slides (20 points):</u>
 * Are there obvious grammar errors, spelling problems or formatting issues?
