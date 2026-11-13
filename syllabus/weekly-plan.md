@@ -156,7 +156,7 @@ These sit on top of the weekly cycle above.
                     <li>External partner email</li>
                 </ul>
             </td>
-            <td>Evaluate up to two repositories against the <a href="../rubrics/final-technical-cleanup.md">final technical cleanup</a> checklist</td>
+            <td>Evaluate up to two repositories against the <a href="https://clinic.ds.uchicago.edu/rubrics/final-technical-cleanup.html">final technical cleanup</a> checklist</td>
             <td>Final weekly grade; grade final deliverables</td>
         </tr>
     </tbody>
