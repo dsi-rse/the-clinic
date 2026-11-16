@@ -87,8 +87,7 @@ For each file copy the checklist below and complete it.
     - [ ] Comments are human readable and descriptive (there is no commented-out code or commented out code blocks).
     - [ ] Code is free of API Keys or secrets.
 - [ ] Is this a notebook (*.ipynb file)?:
-    - [ ] There are less than 20 cells.
-    - [ ] Every cell has less than 10 lines of code.
+    - [ ] Generally, notebooks should be small and used for exploration and demonstration, not in-depth coding - unless your project has been given explicit expectations otherwise
     - [ ] Code is free of environment management (no `! pip install` / `! conda install` lines).
     - [ ] All functions are defined in helper files (there are no `def` or `class` in notebooks).
     - [ ] Comments are human readable and descriptive (there is no commented-out code or commented out code blocks).
